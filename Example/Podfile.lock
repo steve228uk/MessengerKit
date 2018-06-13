@@ -9,7 +9,7 @@ EXTERNAL SOURCES:
     :path: "../"
 
 SPEC CHECKSUMS:
-  MessengerKit: 7434b0b34e39b553b8360bce72ca7d7238829ccf
+  MessengerKit: 892fdf259f354b32e0c92146a82e2c9432182ec9
 
 PODFILE CHECKSUM: aaa0affedafb7fc2bd49bff77dbec8cb8ca43ebd
 

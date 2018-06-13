@@ -19,12 +19,9 @@
     "ios": "10.0"
   },
   "source_files": [
-    "MessengerKit/Classes/**/*.{h,m,swift}"
+    "MessengerKit/**/*.{h,m,swift}"
   ],
   "resource_bundles": {
-    "MessengerKit": [
-      "MessengerKit/Assets/**/*",
-      "MessengerKit/Classes/**/*.{xib,nib}"
-    ]
+    "MessengerKit": "MessengerKit/**/*.{xcassets,xib,nib}"
   }
 }
