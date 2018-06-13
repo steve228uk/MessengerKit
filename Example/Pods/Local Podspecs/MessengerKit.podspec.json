@@ -1,0 +1,30 @@
+{
+  "name": "MessengerKit",
+  "version": "0.1.0",
+  "summary": "A short description of MessengerKit.",
+  "description": "TODO: Add long description of the pod here.",
+  "homepage": "https://github.com/steve228uk/MessengerKit",
+  "license": {
+    "type": "MIT",
+    "file": "LICENSE"
+  },
+  "authors": {
+    "steve228uk": "steve228uk@gmail.com"
+  },
+  "source": {
+    "git": "https://github.com/steve228uk/MessengerKit.git",
+    "tag": "0.1.0"
+  },
+  "platforms": {
+    "ios": "10.0"
+  },
+  "source_files": [
+    "MessengerKit/Classes/**/*.{h,m,swift}"
+  ],
+  "resource_bundles": {
+    "MessengerKit": [
+      "MessengerKit/Assets/**/*",
+      "MessengerKit/Classes/**/*.{xib,nib}"
+    ]
+  }
+}

@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14109" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14088"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="outgoingImage" id="nw2-Kp-ZmF" customClass="MSGImageCollectionViewCell" customModule="MessengerKit" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="269" height="176"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                <rect key="frame" x="0.0" y="0.0" width="269" height="176"/>
+                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                <subviews>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="cFp-Pv-V22">
+                        <rect key="frame" x="-20" y="0.0" width="269" height="176"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="269" id="MBM-ua-CR4"/>
+                        </constraints>
+                    </imageView>
+                </subviews>
+            </view>
+            <constraints>
+                <constraint firstItem="cFp-Pv-V22" firstAttribute="top" secondItem="nw2-Kp-ZmF" secondAttribute="top" id="Yn9-Go-GO4"/>
+                <constraint firstAttribute="bottom" secondItem="cFp-Pv-V22" secondAttribute="bottom" id="pFv-QJ-ceh"/>
+                <constraint firstAttribute="trailing" secondItem="cFp-Pv-V22" secondAttribute="trailing" constant="20" id="zrh-oz-DAN"/>
+            </constraints>
+            <viewLayoutGuide key="safeArea" id="DGD-7c-c5N"/>
+            <size key="customSize" width="269" height="176"/>
+            <connections>
+                <outlet property="imageView" destination="cFp-Pv-V22" id="Ba9-cM-We5"/>
+                <outlet property="imageViewWidthConstraint" destination="MBM-ua-CR4" id="rsx-83-RdS"/>
+            </connections>
+            <point key="canvasLocation" x="-82.5" y="25"/>
+        </collectionViewCell>
+    </objects>
+</document>

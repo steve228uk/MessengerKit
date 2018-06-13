@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14109" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14088"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionReusableView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="incomingHeader" id="tyy-rb-xZG" customClass="MSGImessageHeaderView" customModule="MessengerKit" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="425" height="49"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <subviews>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="PAq-UH-prf">
+                    <rect key="frame" x="16" y="34.5" width="393" height="14.5"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                    <color key="textColor" white="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <nil key="highlightedColor"/>
+                </label>
+            </subviews>
+            <constraints>
+                <constraint firstItem="PAq-UH-prf" firstAttribute="leading" secondItem="SZP-7Z-9fa" secondAttribute="leading" constant="16" id="Dmp-Mj-FlC"/>
+                <constraint firstItem="SZP-7Z-9fa" firstAttribute="bottom" secondItem="PAq-UH-prf" secondAttribute="bottom" id="Ooh-KZ-iC4"/>
+                <constraint firstItem="SZP-7Z-9fa" firstAttribute="trailing" secondItem="PAq-UH-prf" secondAttribute="trailing" constant="16" id="bd4-mp-HFR"/>
+            </constraints>
+            <viewLayoutGuide key="safeArea" id="SZP-7Z-9fa"/>
+            <connections>
+                <outlet property="label" destination="PAq-UH-prf" id="oGZ-PD-Ca7"/>
+            </connections>
+            <point key="canvasLocation" x="86.5" y="53.5"/>
+        </collectionReusableView>
+    </objects>
+</document>
