@@ -28,11 +28,13 @@ The framework was built for and is used in production at [Travamigos](https://tr
 
 ## Documentation
 
-- Getting Started
+- [Getting Started](https://github.com/steve228uk/MessengerKit/wiki/Getting-Started)
 - Customising an Existing Style
 - Creating a Custom Style
 
 ## Installation
+
+MessengerKit requires Swift 4.0 and iOS 10.0 or later.
 
 ### Manual
 
@@ -40,7 +42,15 @@ Drag the contents of the `MessengerKit` folder into your Xcode Project.
 
 ### CocoaPods
 
+Add the following to your project's Podfile.
+
+```ruby
+pod 'MessengerKit', :git => 'git@github.com:steve228uk/MessengerKit.git'
+```
+
 ### Carthage
+
+Coming soon.
 
 ## Credits
 
