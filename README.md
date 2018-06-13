@@ -19,7 +19,7 @@ MessengerKit is a drop-in UI for messenger interfaces on iOS built in Swift. Cen
 - Multiple included cell types: text, large-emoji, image, video.
 - Presentation of `SFSafariViewController`
 - Built-in, customisable themes.
-- A custom themeing system to bring your own `UICollectionViewCell`s, headers, footers, and input views.
+- A custom theming system to bring your own `UICollectionViewCell`s, headers, footers, and input views.
 - Avatar support (currently only in the `travamigos` theme).
 
 The framework was built for and is used in production at [Travamigos](https://travamigos.com).
@@ -29,7 +29,7 @@ The framework was built for and is used in production at [Travamigos](https://tr
 ## Documentation
 
 - [Getting Started](https://github.com/steve228uk/MessengerKit/wiki/Getting-Started)
-- Customising an Existing Style
+- [Customising an Existing Style](https://github.com/steve228uk/MessengerKit/wiki/Customising-an-Existing-Style)
 - Creating a Custom Style
 
 ## Installation
