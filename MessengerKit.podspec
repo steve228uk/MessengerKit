@@ -32,7 +32,7 @@ The framework was built for and is used in production at [Travamigos](https://tr
                        DESC
 
   s.homepage         = 'https://github.com/steve228uk/MessengerKit'
-  s.screenshots      = https://github.com/steve228uk/MessengerKit/blob/master/readme-resources/screenshots/examples.png'
+  s.screenshots      = 'https://github.com/steve228uk/MessengerKit/blob/master/readme-resources/screenshots/examples.png'
   s.license          = { :type => 'MIT', :file => 'LICENSE' }
   s.author           = { 'steve228uk' => 'steve228uk@gmail.com' }
   s.source           = { :git => 'https://github.com/steve228uk/MessengerKit.git', :tag => s.version.to_s }
