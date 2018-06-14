@@ -34,7 +34,7 @@ The framework was built for and is used in production at [Travamigos](https://tr
 
 - [Getting Started](https://github.com/steve228uk/MessengerKit/wiki/Getting-Started)
 - [Customising an Existing Style](https://github.com/steve228uk/MessengerKit/wiki/Customising-an-Existing-Style)
-- Creating a Custom Style
+- [Creating a Custom Style](https://github.com/steve228uk/MessengerKit/wiki/Creating-a-Custom-Style)
 
 ## Installation
 
