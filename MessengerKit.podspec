@@ -32,13 +32,13 @@ The framework was built for and is used in production at [Travamigos](https://tr
                        DESC
 
   s.homepage         = 'https://github.com/steve228uk/MessengerKit'
-  s.screenshots      = 'https://github.com/steve228uk/MessengerKit/blob/master/readme-resources/screenshots/examples.png'
   s.license          = { :type => 'MIT', :file => 'LICENSE' }
   s.author           = { 'steve228uk' => 'steve228uk@gmail.com' }
   s.source           = { :git => 'https://github.com/steve228uk/MessengerKit.git', :tag => s.version.to_s }
   s.social_media_url = 'https://twitter.com/steve228uk'
 
   s.ios.deployment_target = '10.0'
+  s.swift_version = '4.0'
 
   s.source_files = ['MessengerKit/**/*.{h,m,swift}']
   s.resource_bundle = { 'MessengerKit' => 'MessengerKit/**/*.{xcassets,xib,nib}' }
