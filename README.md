@@ -26,6 +26,10 @@ The framework was built for and is used in production at [Travamigos](https://tr
 
 ## Screenshots
 
+<p align="center">
+    <img src="readme-resources/screenshots/examples.png" alt="MessengerKit Examples">
+</p>
+
 ## Documentation
 
 - [Getting Started](https://github.com/steve228uk/MessengerKit/wiki/Getting-Started)
