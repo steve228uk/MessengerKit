@@ -8,15 +8,15 @@
 
 import UIKit
 
-class MSGTravCollectionView: MSGCollectionView {
+open class MSGTravCollectionView: MSGCollectionView {
 
-    override func didMoveToSuperview() {
+    override open func didMoveToSuperview() {
         super.didMoveToSuperview()
      
         setCollectionViewLayout(MSGTravCollectionViewFlowLayout(), animated: false)
     }
     
-    override func registerCells() {
+    override open func registerCells() {
         super.registerCells()
         
         // Text

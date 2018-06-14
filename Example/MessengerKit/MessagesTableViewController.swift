@@ -13,6 +13,8 @@ class MessagesTableViewController: UITableViewController {
     let iMessageController = UINavigationController(rootViewController: ViewController())
     
     let travamigosController = UINavigationController(rootViewController: TravamigosViewController())
+    
+    let customController = UINavigationController(rootViewController: CustomStyleViewController())
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -31,6 +33,9 @@ class MessagesTableViewController: UITableViewController {
             break
         case 1:
             splitViewController?.showDetailViewController(travamigosController, sender: nil)
+            break
+        case 2:
+            splitViewController?.showDetailViewController(customController, sender: nil)
             break
         default:
             break

@@ -8,6 +8,13 @@
 
 /* Begin PBXBuildFile section */
 		22C99054280E2C47522F314F /* Pods_MessengerKit_Example.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4859D6985287B24C786BBA1E /* Pods_MessengerKit_Example.framework */; };
+		2826278620D278880069D966 /* CustomStyleViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2826278520D278880069D966 /* CustomStyleViewController.swift */; };
+		2826278820D279890069D966 /* CustomStyle.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2826278720D279890069D966 /* CustomStyle.swift */; };
+		2826278A20D279C60069D966 /* CustomCollectionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2826278920D279C60069D966 /* CustomCollectionView.swift */; };
+		2826278D20D27C440069D966 /* CustomOutgoingTextCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2826278B20D27C440069D966 /* CustomOutgoingTextCell.swift */; };
+		2826278E20D27C440069D966 /* CustomOutgoingTextCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2826278C20D27C440069D966 /* CustomOutgoingTextCell.xib */; };
+		2826279020D27C910069D966 /* CustomBubble.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2826278F20D27C910069D966 /* CustomBubble.swift */; };
+		2826279220D280030069D966 /* CustomIncomingTextCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2826279120D280030069D966 /* CustomIncomingTextCell.xib */; };
 		28C3375520D1550D00ED6803 /* MessagesTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28C3375120D1550D00ED6803 /* MessagesTableViewController.swift */; };
 		28C3375620D1550D00ED6803 /* TravamigosViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28C3375220D1550D00ED6803 /* TravamigosViewController.swift */; };
 		28C3375720D1550D00ED6803 /* SplitViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28C3375320D1550D00ED6803 /* SplitViewController.swift */; };
@@ -23,6 +30,13 @@
 /* Begin PBXFileReference section */
 		1A4303F96349B583DECE3ACE /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = LICENSE; path = ../LICENSE; sourceTree = "<group>"; };
 		1EEE87FA9C8E9498CA61FD8E /* MessengerKit.podspec */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = MessengerKit.podspec; path = ../MessengerKit.podspec; sourceTree = "<group>"; };
+		2826278520D278880069D966 /* CustomStyleViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomStyleViewController.swift; sourceTree = "<group>"; };
+		2826278720D279890069D966 /* CustomStyle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomStyle.swift; sourceTree = "<group>"; };
+		2826278920D279C60069D966 /* CustomCollectionView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomCollectionView.swift; sourceTree = "<group>"; };
+		2826278B20D27C440069D966 /* CustomOutgoingTextCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomOutgoingTextCell.swift; sourceTree = "<group>"; };
+		2826278C20D27C440069D966 /* CustomOutgoingTextCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CustomOutgoingTextCell.xib; sourceTree = "<group>"; };
+		2826278F20D27C910069D966 /* CustomBubble.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomBubble.swift; sourceTree = "<group>"; };
+		2826279120D280030069D966 /* CustomIncomingTextCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CustomIncomingTextCell.xib; sourceTree = "<group>"; };
 		28C3375120D1550D00ED6803 /* MessagesTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MessagesTableViewController.swift; sourceTree = "<group>"; };
 		28C3375220D1550D00ED6803 /* TravamigosViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TravamigosViewController.swift; sourceTree = "<group>"; };
 		28C3375320D1550D00ED6803 /* SplitViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SplitViewController.swift; sourceTree = "<group>"; };
@@ -56,6 +70,20 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		2826278420D278520069D966 /* Custom Style */ = {
+			isa = PBXGroup;
+			children = (
+				2826278520D278880069D966 /* CustomStyleViewController.swift */,
+				2826278720D279890069D966 /* CustomStyle.swift */,
+				2826278920D279C60069D966 /* CustomCollectionView.swift */,
+				2826278B20D27C440069D966 /* CustomOutgoingTextCell.swift */,
+				2826278C20D27C440069D966 /* CustomOutgoingTextCell.xib */,
+				2826279120D280030069D966 /* CustomIncomingTextCell.xib */,
+				2826278F20D27C910069D966 /* CustomBubble.swift */,
+			);
+			name = "Custom Style";
+			sourceTree = "<group>";
+		};
 		28C3375020D154FC00ED6803 /* ViewControllers */ = {
 			isa = PBXGroup;
 			children = (
@@ -97,6 +125,7 @@
 		607FACD21AFB9204008FA782 /* Example for MessengerKit */ = {
 			isa = PBXGroup;
 			children = (
+				2826278420D278520069D966 /* Custom Style */,
 				28C3375D20D1555500ED6803 /* Extensions */,
 				28C3375020D154FC00ED6803 /* ViewControllers */,
 				607FACD51AFB9204008FA782 /* AppDelegate.swift */,
@@ -210,8 +239,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				28C3375A20D1551A00ED6803 /* Main.storyboard in Resources */,
+				2826279220D280030069D966 /* CustomIncomingTextCell.xib in Resources */,
 				607FACE01AFB9204008FA782 /* LaunchScreen.xib in Resources */,
 				607FACDD1AFB9204008FA782 /* Images.xcassets in Resources */,
+				2826278E20D27C440069D966 /* CustomOutgoingTextCell.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -261,12 +292,17 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2826279020D27C910069D966 /* CustomBubble.swift in Sources */,
 				28C3375820D1550D00ED6803 /* ViewController.swift in Sources */,
+				2826278D20D27C440069D966 /* CustomOutgoingTextCell.swift in Sources */,
 				28C3375620D1550D00ED6803 /* TravamigosViewController.swift in Sources */,
 				28C3375C20D1553000ED6803 /* User.swift in Sources */,
 				607FACD61AFB9204008FA782 /* AppDelegate.swift in Sources */,
 				28C3375F20D1556200ED6803 /* Emoji.swift in Sources */,
+				2826278A20D279C60069D966 /* CustomCollectionView.swift in Sources */,
+				2826278620D278880069D966 /* CustomStyleViewController.swift in Sources */,
 				28C3375520D1550D00ED6803 /* MessagesTableViewController.swift in Sources */,
+				2826278820D279890069D966 /* CustomStyle.swift in Sources */,
 				28C3375720D1550D00ED6803 /* SplitViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

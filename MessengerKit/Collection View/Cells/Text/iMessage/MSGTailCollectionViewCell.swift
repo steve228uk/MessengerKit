@@ -14,7 +14,7 @@ open class MSGTailCollectionViewCell: MSGMessageCell {
     
     @IBOutlet weak var bubbleWidthConstraint: NSLayoutConstraint!
     
-    override public var message: MSGMessage? {
+    override open var message: MSGMessage? {
         didSet {
             guard let message = message,
                 case let MSGMessageBody.text(body) = message.body else { return }
@@ -23,7 +23,7 @@ open class MSGTailCollectionViewCell: MSGMessageCell {
         }
     }
     
-    override public var style: MSGMessengerStyle? {
+    override open var style: MSGMessengerStyle? {
         didSet {
             guard let message = message, let style = style as? MSGIMessageStyle else { return }
             bubble.linkTextAttributes[NSAttributedStringKey.underlineColor.rawValue] = style.outgoingLinkColor
@@ -34,7 +34,7 @@ open class MSGTailCollectionViewCell: MSGMessageCell {
         }
     }
     
-    override public var isLastInSection: Bool {
+    override open var isLastInSection: Bool {
         didSet {
             guard let style = style as? MSGIMessageStyle,
             !style.alwaysDisplayTails else {

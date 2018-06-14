@@ -11,25 +11,25 @@ import UIKit
 open class MSGMessageCell: UICollectionViewCell {
     
     /// The message the cell is displaying
-    public var message: MSGMessage?
+    open var message: MSGMessage?
     
     /// Provides information on how to style the cell
-    public var style: MSGMessengerStyle?
+    open var style: MSGMessengerStyle?
     
     /// Whether the cell is the last displayed in the section.
     /// We need to know this for styles like iMessage as the final cell sometimes differs in appearance.
-    public var isLastInSection: Bool = false
+    open var isLastInSection: Bool = false
     
     /// Ensure this is declared as weak or you'll end up with a memory leak, kids.
-    public weak var delegate: MSGMessageCellDelegate?
+    open weak var delegate: MSGMessageCellDelegate?
     
     /// The gesture recogniser for long press.
     /// This should be added to the cell's `contentView`
-    public var longPressGestureRecognizer: UILongPressGestureRecognizer!
+    open var longPressGestureRecognizer: UILongPressGestureRecognizer!
     
     /// The gesture recogniser for a tap.
     /// This should be added to the cell's `contentView`
-    public var tapGestureRecognizer: UITapGestureRecognizer!
+    open var tapGestureRecognizer: UITapGestureRecognizer!
     
     public override init(frame: CGRect) {
         super.init(frame: frame)
@@ -55,12 +55,12 @@ open class MSGMessageCell: UICollectionViewCell {
 
 extension MSGMessageCell {
     
-    @objc func longPressReceieved(_ sender: UILongPressGestureRecognizer) {
+    @objc open func longPressReceieved(_ sender: UILongPressGestureRecognizer) {
         guard let message = message, sender.state == .began else { return }
         delegate?.cellLongPressReceived(for: message)
     }
     
-    @objc func tapReceived(_ sender: UITapGestureRecognizer) {
+    @objc open func tapReceived(_ sender: UITapGestureRecognizer) {
         guard let message = message, sender.state == .ended else { return }
         delegate?.cellTapReceived(for: message)
     }

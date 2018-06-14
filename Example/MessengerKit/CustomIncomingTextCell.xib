@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14113" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14088"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="incomingText" id="axi-e4-gaj" customClass="CustomTextCell" customModule="MessengerKit_Example" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="425" height="58"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                <rect key="frame" x="0.0" y="0.0" width="425" height="58"/>
+                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                <subviews>
+                    <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Icw-5h-tHL" customClass="CustomBubble" customModule="MessengerKit_Example" customModuleProvider="target">
+                        <rect key="frame" x="74" y="0.0" width="322" height="58"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="322" id="X4t-Of-qjW"/>
+                        </constraints>
+                        <string key="text">Lorem ipsum dolor sit er elit lamet, consectetaur cillium adipisicing pecu, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Nam liber te conscient to factor tum poen legum odioque civiuda.</string>
+                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                        <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                    </textView>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="j3J-0p-hk5">
+                        <rect key="frame" x="16" y="5" width="48" height="48"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="48" id="P0t-Yx-HHC"/>
+                            <constraint firstAttribute="width" constant="48" id="svX-Xm-9m2"/>
+                        </constraints>
+                    </imageView>
+                </subviews>
+            </view>
+            <constraints>
+                <constraint firstItem="j3J-0p-hk5" firstAttribute="centerY" secondItem="axi-e4-gaj" secondAttribute="centerY" id="4ia-PZ-5Wu"/>
+                <constraint firstItem="Icw-5h-tHL" firstAttribute="leading" secondItem="j3J-0p-hk5" secondAttribute="trailing" constant="10" id="OOm-lj-iuc"/>
+                <constraint firstItem="Icw-5h-tHL" firstAttribute="top" secondItem="axi-e4-gaj" secondAttribute="top" id="edh-iE-n2E"/>
+                <constraint firstAttribute="bottom" secondItem="Icw-5h-tHL" secondAttribute="bottom" id="mkv-VP-3Ux"/>
+                <constraint firstItem="j3J-0p-hk5" firstAttribute="leading" secondItem="axi-e4-gaj" secondAttribute="leading" constant="16" id="ysl-KD-6c5"/>
+            </constraints>
+            <viewLayoutGuide key="safeArea" id="aQL-0h-x7B"/>
+            <size key="customSize" width="425" height="58"/>
+            <connections>
+                <outlet property="avatarView" destination="j3J-0p-hk5" id="Csh-gF-nPZ"/>
+                <outlet property="bubble" destination="Icw-5h-tHL" id="Sdq-yZ-MAf"/>
+                <outlet property="bubbleWidthConstraint" destination="X4t-Of-qjW" id="1zj-dQ-xdj"/>
+            </connections>
+            <point key="canvasLocation" x="-3.5" y="1"/>
+        </collectionViewCell>
+    </objects>
+</document>
