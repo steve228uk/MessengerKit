@@ -186,14 +186,14 @@ open class MSGMessengerViewController: UIViewController {
     
     // MARK: - Actions
     
-    @objc open func inputViewDidChange(inputView: MSGInputView) { }
+    @objc open dynamic func inputViewDidChange(inputView: MSGInputView) { }
     
-    @objc open func inputViewPrimaryActionTriggered(inputView: MSGInputView) { }
+    @objc open dynamic func inputViewPrimaryActionTriggered(inputView: MSGInputView) { }
     
     
     // MARK: - Keyboard
     
-    @objc open func keyboardWillShow(_ notification: Notification) {
+    @objc open dynamic func keyboardWillShow(_ notification: Notification) {
         collectionView.scrollToBottom(animated: false)
     }
     
