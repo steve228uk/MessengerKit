@@ -12,15 +12,15 @@ extension MSGMessengerViewController: UICollectionViewDataSource, UICollectionVi
     
     // MARK: - DataSource
     
-    public func numberOfSections(in collectionView: UICollectionView) -> Int {
+    open func numberOfSections(in collectionView: UICollectionView) -> Int {
         return dataSource?.numberOfSections() ?? 0
     }
     
-    public func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
+    open func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
         return dataSource?.numberOfMessages(in: section) ?? 0
     }
     
-    public func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
+    open func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
         
         guard let message = dataSource?.message(for: indexPath) else {
             fatalError("Message not defined for \(indexPath)")
@@ -95,7 +95,7 @@ extension MSGMessengerViewController: UICollectionViewDataSource, UICollectionVi
     
     // MARK: - Delegate
     
-    public func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAt indexPath: IndexPath) -> CGSize {
+    open func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAt indexPath: IndexPath) -> CGSize {
         
         guard let message = dataSource?.message(for: indexPath) else {
             fatalError("Message not defined for \(indexPath)")
@@ -105,7 +105,7 @@ extension MSGMessengerViewController: UICollectionViewDataSource, UICollectionVi
     }
     
     
-    public func collectionView(_ collectionView: UICollectionView, prefetchItemsAt indexPaths: [IndexPath]) {
+    open func collectionView(_ collectionView: UICollectionView, prefetchItemsAt indexPaths: [IndexPath]) {
         
         for indexPath in indexPaths {
             guard let message = dataSource?.message(for: indexPath) else {
@@ -117,7 +117,7 @@ extension MSGMessengerViewController: UICollectionViewDataSource, UICollectionVi
         
     }
     
-    @discardableResult func calculateSize(for message: MSGMessage) -> CGSize {
+    @discardableResult open func calculateSize(for message: MSGMessage) -> CGSize {
         
         if let size = cachedSizes[message.id] {
             return size
@@ -133,7 +133,7 @@ extension MSGMessengerViewController: UICollectionViewDataSource, UICollectionVi
     
     // MARK: - Header / Footer
     
-    public func collectionView(_ collectionView: UICollectionView, viewForSupplementaryElementOfKind kind: String, at indexPath: IndexPath) -> UICollectionReusableView {
+    open func collectionView(_ collectionView: UICollectionView, viewForSupplementaryElementOfKind kind: String, at indexPath: IndexPath) -> UICollectionReusableView {
         
         guard let message = dataSource?.message(for: indexPath) else {
             fatalError("Message not defined for \(indexPath)")
@@ -170,7 +170,7 @@ extension MSGMessengerViewController: UICollectionViewDataSource, UICollectionVi
         
     }
     
-    public func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, referenceSizeForHeaderInSection section: Int) -> CGSize {
+    open func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, referenceSizeForHeaderInSection section: Int) -> CGSize {
         guard style.headerHeight > 0 else {
             return .zero
         }
@@ -178,7 +178,7 @@ extension MSGMessengerViewController: UICollectionViewDataSource, UICollectionVi
         return CGSize(width: collectionView.bounds.width, height: style.headerHeight)
     }
     
-    public func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, referenceSizeForFooterInSection section: Int) -> CGSize {
+    open func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, referenceSizeForFooterInSection section: Int) -> CGSize {
         guard style.footerHeight > 0 else {
             return .zero
         }
