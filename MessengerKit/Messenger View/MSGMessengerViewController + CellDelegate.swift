@@ -39,4 +39,8 @@ extension MSGMessengerViewController: MSGMessageCellDelegate {
         
     }
     
+    public func cellAvatarTapped(for user: MSGUser) {
+        delegate?.avatarTapped(for: user)
+    }
+    
 }

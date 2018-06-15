@@ -17,6 +17,8 @@ class CustomTextCell: MSGMessageCell {
     
     @IBOutlet weak var avatarView: UIImageView?
     
+    var avatarGestureRecognizer: UITapGestureRecognizer!
+    
     override open var message: MSGMessage? {
         didSet {
             guard let message = message,
@@ -49,6 +51,15 @@ class CustomTextCell: MSGMessageCell {
         super.awakeFromNib()
         avatarView?.layer.cornerRadius = 24
         avatarView?.layer.masksToBounds = true
+        
+        avatarGestureRecognizer = UITapGestureRecognizer(target: self, action: #selector(avatarTapped))
+        avatarView?.addGestureRecognizer(avatarGestureRecognizer)
+        avatarView?.isUserInteractionEnabled = true
     }
     
+    @objc func avatarTapped(_ sender: UITapGestureRecognizer) {
+        guard let user = message?.user else { return }
+        delegate?.cellAvatarTapped(for: user)
+    }
+ 
 }
