@@ -16,12 +16,7 @@ public protocol MSGUser {
     var displayName: String { get }
     
     /// The avatar for the user.
-    /// This is optional as an `avatarUrl` can be provided instead.
     var avatar: UIImage? { get set }
-    
-    /// The URL for an avatar.
-    /// This is optional as an `avatar` can be provided instead.
-    var avatarUrl: URL? { get set }
     
     /// Whether this user is the one sending messages.
     /// This is used to determine which bubble is rendered.
