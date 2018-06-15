@@ -74,7 +74,7 @@ class TravamigosViewController: MSGMessengerViewController {
         collectionView.scrollToBottom(animated: false)
         
         DispatchQueue.main.asyncAfter(deadline: .now() + 3) {
-            self.setUsersTyping([self.tim, self.steve])
+            self.setUsersTyping([self.tim])
         }
         
     }

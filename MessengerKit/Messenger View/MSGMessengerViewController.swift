@@ -221,7 +221,7 @@ open class MSGMessengerViewController: UIViewController {
                 .foregroundColor: UIColor.darkText
             ])
         } else {
-            attributedText = NSMutableAttributedString(string: "\(users.count) people ", attributes: [
+            attributedText = NSMutableAttributedString(string: "\(users.count) people", attributes: [
                 .font: UIFont.systemFont(ofSize: 14, weight: .bold),
                 .foregroundColor: UIColor.darkText
             ])
