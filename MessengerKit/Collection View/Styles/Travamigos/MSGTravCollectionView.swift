@@ -10,14 +10,10 @@ import UIKit
 
 open class MSGTravCollectionView: MSGCollectionView {
 
-    override open func didMoveToSuperview() {
-        super.didMoveToSuperview()
-     
-        setCollectionViewLayout(MSGTravCollectionViewFlowLayout(), animated: false)
-    }
-    
     override open func registerCells() {
         super.registerCells()
+        
+        collectionViewLayout = MSGTravCollectionViewFlowLayout()
         
         // Text
         

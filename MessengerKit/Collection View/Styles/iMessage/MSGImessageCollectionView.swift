@@ -9,16 +9,11 @@
 import UIKit
 
 open class MSGImessageCollectionView: MSGCollectionView {
-
-    override open func didMoveToSuperview() {
-        super.didMoveToSuperview()
-        
-        setCollectionViewLayout(MSGImessageCollectionViewFlowLayout(), animated: false)
-        
-    }
     
     override open func registerCells() {
         super.registerCells()
+        
+        collectionViewLayout = MSGImessageCollectionViewFlowLayout()
         
         // Text
         
