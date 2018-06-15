@@ -6,16 +6,16 @@
 //  Copyright © 2018 Cocoon Development Ltd. All rights reserved.
 //
 
-import Foundation
+import UIKit
 
-protocol MSGSectionInfoProvider: NSObjectProtocol {
+open class MSGSectionReusableView: UICollectionReusableView {
     
-    var style: MSGMessengerStyle? { get set }
+    open var style: MSGMessengerStyle?
     
-    var message: MSGMessage? { get set }
+    open var message: MSGMessage?
     
-    var title: String? { get set }
+    open var title: String?
     
-    var delegate: MSGSectionInfoProviderDelegate? { get set }
+    internal weak var delegate: MSGSectionInfoProviderDelegate?
     
 }

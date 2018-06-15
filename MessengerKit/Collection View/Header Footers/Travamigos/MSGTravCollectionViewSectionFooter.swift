@@ -8,25 +8,19 @@
 
 import UIKit
 
-class MSGTravCollectionViewSectionFooter: UICollectionReusableView, MSGSectionInfoProvider {
+class MSGTravCollectionViewSectionFooter: MSGSectionReusableView {
     
     @IBOutlet weak var avatarImageView: UIImageView!
     
-    weak var delegate: MSGSectionInfoProviderDelegate?
-    
     var avatarTapGestureRecogniser: UITapGestureRecognizer!
     
-    var style: MSGMessengerStyle?
-    
-    var message: MSGMessage? {
+    override var message: MSGMessage? {
         didSet {
             
             avatarImageView.image = message?.user.avatar
             
         }
     }
-    
-    var title: String?
     
     override func awakeFromNib() {
         super.awakeFromNib()

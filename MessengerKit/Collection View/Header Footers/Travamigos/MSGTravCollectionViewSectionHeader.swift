@@ -8,17 +8,11 @@
 
 import UIKit
 
-class MSGTravCollectionViewSectionHeader: UICollectionReusableView, MSGSectionInfoProvider {
+class MSGTravCollectionViewSectionHeader: MSGSectionReusableView {
     
     @IBOutlet weak var label: UILabel!
     
-    weak var delegate: MSGSectionInfoProviderDelegate?
-    
-    var style: MSGMessengerStyle?
-    
-    var message: MSGMessage?
-    
-    var title: String? {
+    override var title: String? {
         didSet {
             label.text = title
         }

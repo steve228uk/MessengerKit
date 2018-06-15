@@ -144,25 +144,25 @@ extension MSGMessengerViewController: UICollectionViewDataSource, UICollectionVi
             
             
             let identifier = message.user.isSender ? "outgoingFooter" : "incomingFooter"
-            let footer = collectionView.dequeueReusableSupplementaryView(ofKind: kind, withReuseIdentifier: identifier, for: indexPath) as! MSGSectionInfoProvider
+            let footer = collectionView.dequeueReusableSupplementaryView(ofKind: kind, withReuseIdentifier: identifier, for: indexPath) as! MSGSectionReusableView
             
             footer.message = message
             footer.style = style
             footer.title = dataSource?.footerTitle(for: indexPath.section)
             
-            return footer as! UICollectionReusableView
+            return footer
             
         default:
             
             
             let identifier = message.user.isSender ? "outgoingHeader" : "incomingHeader"
-            let header = collectionView.dequeueReusableSupplementaryView(ofKind: kind, withReuseIdentifier: identifier, for: indexPath) as! MSGSectionInfoProvider
+            let header = collectionView.dequeueReusableSupplementaryView(ofKind: kind, withReuseIdentifier: identifier, for: indexPath) as! MSGSectionReusableView
             
             header.message = message
             header.style = style
             header.title = dataSource?.headerTitle(for: indexPath.section)
             
-            return header as! UICollectionReusableView
+            return header
             
         }
         

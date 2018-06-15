@@ -8,11 +8,11 @@
 
 import UIKit
 
-class MSGImessageHeaderView: UICollectionReusableView, MSGSectionInfoProvider {
+class MSGImessageHeaderView: MSGSectionReusableView {
     
     @IBOutlet weak var label: UILabel!
     
-    var style: MSGMessengerStyle? {
+    override var style: MSGMessengerStyle? {
         didSet {
             guard let style = style as? MSGIMessageStyle else { return }
             
@@ -21,14 +21,10 @@ class MSGImessageHeaderView: UICollectionReusableView, MSGSectionInfoProvider {
         }
     }
     
-    var title: String? {
+    override var title: String? {
         didSet {
             label.text = title
         }
     }
-    
-    var message: MSGMessage?
-    
-    var delegate: MSGSectionInfoProviderDelegate?
     
 }
