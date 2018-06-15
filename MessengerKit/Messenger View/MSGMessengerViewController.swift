@@ -221,13 +221,13 @@ open class MSGMessengerViewController: UIViewController {
                 .foregroundColor: UIColor.darkText
             ])
         } else {
-            attributedText = NSMutableAttributedString(string: "\(users.count) amigos ", attributes: [
+            attributedText = NSMutableAttributedString(string: "\(users.count) people ", attributes: [
                 .font: UIFont.systemFont(ofSize: 14, weight: .bold),
                 .foregroundColor: UIColor.darkText
             ])
         }
         
-        attributedText.append(NSAttributedString(string: users.count == 1 ? "is typing…" : "typing…", attributes: [
+        attributedText.append(NSAttributedString(string: users.count == 1 ? " is typing…" : " typing…", attributes: [
             .font: UIFont.systemFont(ofSize: 14, weight: .medium),
             .foregroundColor: UIColor.black
         ]))
