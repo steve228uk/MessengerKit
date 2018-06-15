@@ -197,4 +197,45 @@ open class MSGMessengerViewController: UIViewController {
         collectionView.scrollToBottom(animated: false)
     }
     
+    // MARK: - Users Typing
+    
+    /// Sets the users that are currently typing.
+    /// Can be overridden for additional control.
+    ///
+    /// - Parameter users: The users that are typing.
+    open func setUsersTyping(_ users: [MSGUser]) {
+        
+        // TODO: add appearance proxy!!
+        
+        guard users.count > 0 else {
+            collectionView.typingLabel.text = nil
+            collectionView.layoutTypingLabelIfNeeded()
+            return
+        }
+        
+        var attributedText: NSMutableAttributedString!
+        
+        if users.count == 1 {
+            attributedText = NSMutableAttributedString(string: users[0].displayName, attributes: [
+                .font: UIFont.systemFont(ofSize: 14, weight: .bold),
+                .foregroundColor: UIColor.darkText
+            ])
+        } else {
+            attributedText = NSMutableAttributedString(string: "\(users.count) amigos ", attributes: [
+                .font: UIFont.systemFont(ofSize: 14, weight: .bold),
+                .foregroundColor: UIColor.darkText
+            ])
+        }
+        
+        attributedText.append(NSAttributedString(string: users.count == 1 ? "is typing…" : "typing…", attributes: [
+            .font: UIFont.systemFont(ofSize: 14, weight: .medium),
+            .foregroundColor: UIColor.black
+        ]))
+        
+        
+        collectionView.typingLabel.attributedText = attributedText
+        collectionView.layoutTypingLabelIfNeeded()
+        
+    }
+    
 }

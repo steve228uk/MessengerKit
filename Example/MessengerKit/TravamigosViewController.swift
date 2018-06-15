@@ -64,12 +64,19 @@ class TravamigosViewController: MSGMessengerViewController {
         
         dataSource = self
         delegate = self
+        
+        
     }
     
     override func viewDidAppear(_ animated: Bool) {
         super.viewDidAppear(animated)
         
         collectionView.scrollToBottom(animated: false)
+        
+        DispatchQueue.main.asyncAfter(deadline: .now() + 3) {
+            self.setUsersTyping([self.tim, self.steve])
+        }
+        
     }
     
     override func inputViewPrimaryActionTriggered(inputView: MSGInputView) {
