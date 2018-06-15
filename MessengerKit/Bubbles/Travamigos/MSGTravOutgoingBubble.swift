@@ -20,20 +20,6 @@ class MSGTravOutgoingBubble: UITextView {
         ]
     }
     
-    override var textColor: UIColor? {
-        get {
-            return .white
-        }
-        set { }
-    }
-    
-    override var tintColor: UIColor! {
-        get {
-            return .white
-        }
-        set { }
-    }
-    
     override public var selectedTextRange: UITextRange? {
         get {
             return nil
