@@ -16,6 +16,6 @@ open class MSGSectionReusableView: UICollectionReusableView {
     
     open var title: String?
     
-    internal weak var delegate: MSGSectionReusableViewDelegate?
+    open weak var delegate: MSGSectionReusableViewDelegate?
     
 }

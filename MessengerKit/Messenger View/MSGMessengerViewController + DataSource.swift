@@ -186,7 +186,7 @@ extension MSGMessengerViewController: UICollectionViewDataSource, UICollectionVi
         return CGSize(width: collectionView.bounds.width, height: style.footerHeight)
     }
     
-    func reusableViewAvatarTapped(for user: MSGUser) {
+    public func reusableViewAvatarTapped(for user: MSGUser) {
         delegate?.avatarTapped(for: user)
     }
     
