@@ -8,15 +8,15 @@
 
 import Foundation
 
-protocol MSGSectionInfoProviderDelegate: NSObjectProtocol {
+protocol MSGSectionReusableViewDelegate: NSObjectProtocol {
     
-    func avatarTapped(for user: MSGUser)
+    func reusableViewAvatarTapped(for user: MSGUser)
     
 }
 
 
-extension MSGSectionInfoProviderDelegate {
+extension MSGSectionReusableViewDelegate {
     
-    func avatarTapped(for user: MSGUser) { }
+    func reusableViewAvatarTapped(for user: MSGUser) { }
     
 }

@@ -49,7 +49,7 @@ class MSGTravCollectionViewSectionFooter: MSGSectionReusableView {
     
     @objc func avatarTapped(_ sender: UITapGestureRecognizer) {
         guard let user = message?.user else { return }
-        delegate?.avatarTapped(for: user)
+        delegate?.reusableViewAvatarTapped(for: user)
     }
     
 }

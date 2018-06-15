@@ -45,7 +45,7 @@
 		92968530B182103F3A90FA0EC6DCF373 /* MSGMessage.swift in Sources */ = {isa = PBXBuildFile; fileRef = A352914519FACAC10CED4E5CFACE7046 /* MSGMessage.swift */; };
 		9479A1353C767E9B4D74226985439D95 /* MSGTravCollectionViewFlowLayout.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7C4994FB1C84AAEF2ED41BC970C127D1 /* MSGTravCollectionViewFlowLayout.swift */; };
 		95A443ED18B8783FE8BA0FCB18B23B80 /* MSGIncomingEmojiCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = A9933FECF8BB91595EFDDC2A5973079A /* MSGIncomingEmojiCollectionViewCell.xib */; };
-		9662B34DEB5DC84AD99FCD1F45803808 /* MSGSectionInfoProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3B0C1C4F225D46B3127C290AD25A3F6 /* MSGSectionInfoProvider.swift */; };
+		9662B34DEB5DC84AD99FCD1F45803808 /* MSGSectionReusableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3B0C1C4F225D46B3127C290AD25A3F6 /* MSGSectionReusableView.swift */; };
 		9B517CA328069EEA09691F4A571A3CA4 /* MSGEmojiCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 41BFBE3EA34D09470380CF98439B57E2 /* MSGEmojiCollectionViewCell.swift */; };
 		A12A0DC2F33ECD93A600FCC1FF3FB12C /* MSGTravIncomingCollectionViewSectionHeader.xib in Resources */ = {isa = PBXBuildFile; fileRef = 11AB2133538195FFA3CE26436FB1D1B3 /* MSGTravIncomingCollectionViewSectionHeader.xib */; };
 		A2DA741C9BD549FC6F1ABA72CB1FB9A9 /* MSGImessageOutgoingHeaderView.xib in Resources */ = {isa = PBXBuildFile; fileRef = A942037CA72371E3AE211E36927D92A2 /* MSGImessageOutgoingHeaderView.xib */; };
@@ -69,7 +69,7 @@
 		EA9662502A62097315590C96DDBCBEB6 /* MSGPlaceholderTextView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 29088EDB4E753921FC35327D3596527E /* MSGPlaceholderTextView.swift */; };
 		EAFB07FE09D5A2418E9EC19A3936B45D /* MSGMessengerViewController + CellDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F7FDA2687991FEE267D53CA142C7D0EF /* MSGMessengerViewController + CellDelegate.swift */; };
 		F1535106E36ABCCB7801F696B93DC9D4 /* MessengerKit.swift in Sources */ = {isa = PBXBuildFile; fileRef = E88E11295CCC29A1A9B128FF9763EA0E /* MessengerKit.swift */; };
-		F65D4642DBDF96912221B1EDA9E806D9 /* MSGSectionInfoProviderDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D5984D115976EC2F7EB19564110C216 /* MSGSectionInfoProviderDelegate.swift */; };
+		F65D4642DBDF96912221B1EDA9E806D9 /* MSGSectionReusableViewDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D5984D115976EC2F7EB19564110C216 /* MSGSectionReusableViewDelegate.swift */; };
 		F7F42E0281DA67477D4A31CB65FD970C /* MSGOutgoingTailCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 732818ABE3DDEA1E8404E456AC265E65 /* MSGOutgoingTailCollectionViewCell.xib */; };
 		F889B35F2DFB427D8EB200CA6F7BE431 /* MSGMessengerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A22212893942E71B0F3F340786BDA03 /* MSGMessengerView.swift */; };
 		F8B53F43B72A5934D478C5B349E6779F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 467620EF3914A436E960B7943FA2259B /* Assets.xcassets */; };
@@ -98,7 +98,7 @@
 
 /* Begin PBXFileReference section */
 		01ABEBC7483727A64ADE019263A4D3A0 /* MSGDataSource.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = MSGDataSource.swift; sourceTree = "<group>"; };
-		0A1BF00A4F7C87F76D4E70999358D616 /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; path = LICENSE; sourceTree = "<group>"; };
+		0A1BF00A4F7C87F76D4E70999358D616 /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = LICENSE; sourceTree = "<group>"; };
 		11AB2133538195FFA3CE26436FB1D1B3 /* MSGTravIncomingCollectionViewSectionHeader.xib */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = file.xib; path = MSGTravIncomingCollectionViewSectionHeader.xib; sourceTree = "<group>"; };
 		142BBCFCC7D877C87D117F2CF9E66AF9 /* MSGDelegate.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = MSGDelegate.swift; sourceTree = "<group>"; };
 		14619B3409339351875FC0D73A609923 /* MSGTailCollectionViewCell.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = MSGTailCollectionViewCell.swift; sourceTree = "<group>"; };
@@ -106,10 +106,10 @@
 		16A00A911BFA9CB9AFBCFFBB8EC34F30 /* MSGImessageInputView.xib */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = file.xib; path = MSGImessageInputView.xib; sourceTree = "<group>"; };
 		1D85AAA0EAA0325994482D1D7C6CE1D5 /* MessengerKit-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "MessengerKit-prefix.pch"; sourceTree = "<group>"; };
 		20C9C7A18D08306966DC174D90B4A0BB /* MSGIncomingTailCollectionViewCell.xib */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = file.xib; path = MSGIncomingTailCollectionViewCell.xib; sourceTree = "<group>"; };
-		2159F98A8A0CF699B8C7E68F9B1A594D /* Pods_MessengerKit_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_MessengerKit_Example.framework; path = "Pods-MessengerKit_Example.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
+		2159F98A8A0CF699B8C7E68F9B1A594D /* Pods_MessengerKit_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_MessengerKit_Example.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		29088EDB4E753921FC35327D3596527E /* MSGPlaceholderTextView.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = MSGPlaceholderTextView.swift; sourceTree = "<group>"; };
 		2D3A96ACA4416251CC4CE85F3AC40A2C /* MSGTravOutgoingBubble.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = MSGTravOutgoingBubble.swift; sourceTree = "<group>"; };
-		30E079374FDD9640F8F4D7326A22D9E0 /* MessengerKit.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = MessengerKit.framework; path = MessengerKit.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		30E079374FDD9640F8F4D7326A22D9E0 /* MessengerKit.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = MessengerKit.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		335ED66256F229BF535B6D6D1680C664 /* MessengerKit-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "MessengerKit-umbrella.h"; sourceTree = "<group>"; };
 		369996A7879CE6B97D91835E387379AF /* KeyboardFrameObserver.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = KeyboardFrameObserver.swift; sourceTree = "<group>"; };
 		41BFBE3EA34D09470380CF98439B57E2 /* MSGEmojiCollectionViewCell.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = MSGEmojiCollectionViewCell.swift; sourceTree = "<group>"; };
@@ -121,14 +121,14 @@
 		4C15622CEAAB923863FB3D89283E546B /* Pods-MessengerKit_Example-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-MessengerKit_Example-resources.sh"; sourceTree = "<group>"; };
 		4DD3D695F2CCE3CFA6ED20D771DBB535 /* MSGIncomingImageCollectionViewCell.xib */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = file.xib; path = MSGIncomingImageCollectionViewCell.xib; sourceTree = "<group>"; };
 		50C78F1E1CF97ABC418938E5552F5E86 /* MSGTailIncomingBubble.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = MSGTailIncomingBubble.swift; sourceTree = "<group>"; };
-		53F5DE968695CC1CE0611E68FCF121D0 /* MessengerKit.bundle */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; name = MessengerKit.bundle; path = "MessengerKit-MessengerKit.bundle"; sourceTree = BUILT_PRODUCTS_DIR; };
+		53F5DE968695CC1CE0611E68FCF121D0 /* MessengerKit.bundle */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MessengerKit.bundle; sourceTree = BUILT_PRODUCTS_DIR; };
 		59BED293C940F140B81231ADEA378FD9 /* MSGMessengerStyle.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = MSGMessengerStyle.swift; sourceTree = "<group>"; };
 		5AB03D4AB95E193F2ECD380C74F9F5C2 /* MSGCollectionView.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = MSGCollectionView.swift; sourceTree = "<group>"; };
 		5C47407DBB724CE833665FBEE3CC8C45 /* MSGTravInputView.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = MSGTravInputView.swift; sourceTree = "<group>"; };
 		5EA0DE54C5687888F125BA7336C536F0 /* MessengerKit-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "MessengerKit-dummy.m"; sourceTree = "<group>"; };
 		62505F818B6D3656862E7A5561D48D47 /* MSGTravCollectionViewCell.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = MSGTravCollectionViewCell.swift; sourceTree = "<group>"; };
 		63809B01B7CC042C740F446A8370AD80 /* MSGImessageOutgoingFooterView.xib */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = file.xib; path = MSGImessageOutgoingFooterView.xib; sourceTree = "<group>"; };
-		654A407E0816F3C9FE8045B8EE5754BC /* MessengerKit.podspec */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; lastKnownFileType = text; path = MessengerKit.podspec; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		654A407E0816F3C9FE8045B8EE5754BC /* MessengerKit.podspec */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; path = MessengerKit.podspec; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
 		6604A7D69453B4569E4E4827FB9155A9 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS10.3.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
 		673DB86BB0EB2F75D414B6A6B3CC8437 /* MSGTravamigosStyle.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = MSGTravamigosStyle.swift; sourceTree = "<group>"; };
 		68F62E335591944A9B4BE717786B6001 /* MSGImessageCollectionView.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = MSGImessageCollectionView.swift; sourceTree = "<group>"; };
@@ -146,17 +146,17 @@
 		7C4994FB1C84AAEF2ED41BC970C127D1 /* MSGTravCollectionViewFlowLayout.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = MSGTravCollectionViewFlowLayout.swift; sourceTree = "<group>"; };
 		7C7A1ADA5376D0AB0D7AB226825D9278 /* MSGImessageTravCollectionViewFlowLayout.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = MSGImessageTravCollectionViewFlowLayout.swift; sourceTree = "<group>"; };
 		7D27BC5678F4ED1A62280A5F2C48F293 /* MessengerKit.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = MessengerKit.modulemap; sourceTree = "<group>"; };
-		7DC0161CF323A6B372B18EA9B11A2487 /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; path = README.md; sourceTree = "<group>"; };
+		7DC0161CF323A6B372B18EA9B11A2487 /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 		8303BCF0770DE6B88DE25B59FE87D8A9 /* MSGOutgoingImageCollectionViewCell.xib */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = file.xib; path = MSGOutgoingImageCollectionViewCell.xib; sourceTree = "<group>"; };
 		832589D27998722D38580E201491C842 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		8345CE6EE9A5080E035AB92DB9F281B0 /* Pods-MessengerKit_Example-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-MessengerKit_Example-frameworks.sh"; sourceTree = "<group>"; };
 		835D4E44545FCD7717A855435477120D /* Pods-MessengerKit_Example-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-MessengerKit_Example-acknowledgements.markdown"; sourceTree = "<group>"; };
 		8470B359B3B22B3613EFC2717B9AAF8F /* MSGTailOutgoingBubble.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = MSGTailOutgoingBubble.swift; sourceTree = "<group>"; };
 		8925BF6A9736C1B1027DEDCA79479A38 /* Pods-MessengerKit_Example-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-MessengerKit_Example-umbrella.h"; sourceTree = "<group>"; };
-		8D5984D115976EC2F7EB19564110C216 /* MSGSectionInfoProviderDelegate.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = MSGSectionInfoProviderDelegate.swift; sourceTree = "<group>"; };
+		8D5984D115976EC2F7EB19564110C216 /* MSGSectionReusableViewDelegate.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = MSGSectionReusableViewDelegate.swift; sourceTree = "<group>"; };
 		8D600DF5FCA3B828DA56DA751B2D989F /* MSGInputSeparatorView.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = MSGInputSeparatorView.swift; sourceTree = "<group>"; };
 		926CA83C75B34DD88300A73E680CD240 /* MSGTravOutgoingCollectionViewSectionHeader.xib */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = file.xib; path = MSGTravOutgoingCollectionViewSectionHeader.xib; sourceTree = "<group>"; };
-		93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
 		942E5651793CF60E9D84CF5EC74B83C2 /* MSGMessageCell.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = MSGMessageCell.swift; sourceTree = "<group>"; };
 		9714F4A351B98A00E2964B02F47B91A4 /* MSGMessengerViewController + Helpers.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = "MSGMessengerViewController + Helpers.swift"; sourceTree = "<group>"; };
 		978676DE850549C969D3217BF1EB8B6F /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -178,7 +178,7 @@
 		CC52F3607AA1AAA737EB55F2DD190A20 /* MSGImessageInputView.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = MSGImessageInputView.swift; sourceTree = "<group>"; };
 		D1161E9AB8F6A92CBD5464F94A3EAD89 /* Pods-MessengerKit_Example.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-MessengerKit_Example.modulemap"; sourceTree = "<group>"; };
 		D260C03A5C83744B3400A98AB7A05D54 /* MSGImageCollectionViewCell.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = MSGImageCollectionViewCell.swift; sourceTree = "<group>"; };
-		D3B0C1C4F225D46B3127C290AD25A3F6 /* MSGSectionInfoProvider.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = MSGSectionInfoProvider.swift; sourceTree = "<group>"; };
+		D3B0C1C4F225D46B3127C290AD25A3F6 /* MSGSectionReusableView.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = MSGSectionReusableView.swift; sourceTree = "<group>"; };
 		DED9331895DEE32E356A9644288E67F3 /* MSGTravCollectionViewSectionHeader.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = MSGTravCollectionViewSectionHeader.swift; sourceTree = "<group>"; };
 		E35062A9C13208964DE719CBABB1AE9F /* Pods-MessengerKit_Example-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-MessengerKit_Example-acknowledgements.plist"; sourceTree = "<group>"; };
 		E88E11295CCC29A1A9B128FF9763EA0E /* MessengerKit.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = MessengerKit.swift; path = MessengerKit/MessengerKit.swift; sourceTree = "<group>"; };
@@ -220,7 +220,6 @@
 				8D600DF5FCA3B828DA56DA751B2D989F /* MSGInputSeparatorView.swift */,
 				5C47407DBB724CE833665FBEE3CC8C45 /* MSGTravInputView.swift */,
 			);
-			name = Travamigos;
 			path = Travamigos;
 			sourceTree = "<group>";
 		};
@@ -239,7 +238,6 @@
 				4A3EEF9BBFEABBD8CFC2960FAF220B39 /* MSGTravCollectionView.swift */,
 				7C4994FB1C84AAEF2ED41BC970C127D1 /* MSGTravCollectionViewFlowLayout.swift */,
 			);
-			name = Travamigos;
 			path = Travamigos;
 			sourceTree = "<group>";
 		};
@@ -251,7 +249,6 @@
 				63809B01B7CC042C740F446A8370AD80 /* MSGImessageOutgoingFooterView.xib */,
 				A942037CA72371E3AE211E36927D92A2 /* MSGImessageOutgoingHeaderView.xib */,
 			);
-			name = iMessage;
 			path = iMessage;
 			sourceTree = "<group>";
 		};
@@ -260,7 +257,6 @@
 			children = (
 				16A00A911BFA9CB9AFBCFFBB8EC34F30 /* MSGImessageInputView.xib */,
 			);
-			name = iMessage;
 			path = iMessage;
 			sourceTree = "<group>";
 		};
@@ -270,7 +266,6 @@
 				647F9E894F0F31F522EE36CE1CBDA9EF /* iMessage */,
 				B9C1DB552B221BFA6D004415112DB251 /* Travamigos */,
 			);
-			name = Text;
 			path = Text;
 			sourceTree = "<group>";
 		};
@@ -294,7 +289,6 @@
 				20C9C7A18D08306966DC174D90B4A0BB /* MSGIncomingTailCollectionViewCell.xib */,
 				732818ABE3DDEA1E8404E456AC265E65 /* MSGOutgoingTailCollectionViewCell.xib */,
 			);
-			name = iMessage;
 			path = iMessage;
 			sourceTree = "<group>";
 		};
@@ -306,19 +300,17 @@
 				48F870FA1D02E37D63598A82D5FD6DEC /* MSGTravOutgoingCollectionViewSectionFooter.xib */,
 				926CA83C75B34DD88300A73E680CD240 /* MSGTravOutgoingCollectionViewSectionHeader.xib */,
 			);
-			name = Travamigos;
 			path = Travamigos;
 			sourceTree = "<group>";
 		};
 		3AEB146A72529875BD6F6DBEED0743DE /* Header Footers */ = {
 			isa = PBXGroup;
 			children = (
-				D3B0C1C4F225D46B3127C290AD25A3F6 /* MSGSectionInfoProvider.swift */,
-				8D5984D115976EC2F7EB19564110C216 /* MSGSectionInfoProviderDelegate.swift */,
+				D3B0C1C4F225D46B3127C290AD25A3F6 /* MSGSectionReusableView.swift */,
+				8D5984D115976EC2F7EB19564110C216 /* MSGSectionReusableViewDelegate.swift */,
 				A1E03DA96E28A9FD71CBF025703615E3 /* iMessage */,
 				A818B7F32AFA9BA77639FF3AF89F746A /* Travamigos */,
 			);
-			name = "Header Footers";
 			path = "Header Footers";
 			sourceTree = "<group>";
 		};
@@ -350,7 +342,6 @@
 				6C25E1C24ADF2686E38B5F4A28C67B83 /* Media */,
 				1ECEE4A21107FAE85A3AECC8874B7947 /* Text */,
 			);
-			name = Cells;
 			path = Cells;
 			sourceTree = "<group>";
 		};
@@ -361,7 +352,6 @@
 				C3CA71B3DD30DDEDDC1ECB2AD5C4BDAD /* Media */,
 				B52E4234332EB9FCF9C1D7A84EB8BE94 /* Text */,
 			);
-			name = Cells;
 			path = Cells;
 			sourceTree = "<group>";
 		};
@@ -414,7 +404,6 @@
 			children = (
 				14619B3409339351875FC0D73A609923 /* MSGTailCollectionViewCell.swift */,
 			);
-			name = iMessage;
 			path = iMessage;
 			sourceTree = "<group>";
 		};
@@ -424,7 +413,6 @@
 				CC52F3607AA1AAA737EB55F2DD190A20 /* MSGImessageInputView.swift */,
 				A8FEAAD0A859C104E93E863793C7A89D /* MSGImessageSendButton.swift */,
 			);
-			name = iMessage;
 			path = iMessage;
 			sourceTree = "<group>";
 		};
@@ -433,7 +421,6 @@
 			children = (
 				D260C03A5C83744B3400A98AB7A05D54 /* MSGImageCollectionViewCell.swift */,
 			);
-			name = Media;
 			path = Media;
 			sourceTree = "<group>";
 		};
@@ -443,7 +430,6 @@
 				7529C70C45A50100AFC0828FA0ACBD73 /* MSGIncomingTravCollectionViewCell.xib */,
 				B242C1F55ABF8BEB8B7680E505285FDB /* MSGOutgoingTravCollectionViewCell.xib */,
 			);
-			name = Travamigos;
 			path = Travamigos;
 			sourceTree = "<group>";
 		};
@@ -453,7 +439,6 @@
 				9CDF4786B51167C73EE621DB9ADB3BCD /* iMessage */,
 				10085E3093B6C36F05247C63D18FE29C /* Travamigos */,
 			);
-			name = Styles;
 			path = Styles;
 			sourceTree = "<group>";
 		};
@@ -513,7 +498,6 @@
 				C5C919752D2E97817003A98CBA480B64 /* MSGTravIncomingBubble.swift */,
 				2D3A96ACA4416251CC4CE85F3AC40A2C /* MSGTravOutgoingBubble.swift */,
 			);
-			name = Travamigos;
 			path = Travamigos;
 			sourceTree = "<group>";
 		};
@@ -523,7 +507,6 @@
 				68F62E335591944A9B4BE717786B6001 /* MSGImessageCollectionView.swift */,
 				7C7A1ADA5376D0AB0D7AB226825D9278 /* MSGImessageTravCollectionViewFlowLayout.swift */,
 			);
-			name = iMessage;
 			path = iMessage;
 			sourceTree = "<group>";
 		};
@@ -541,7 +524,6 @@
 				B67BD45BF88217C094EC85F6D2E7BED1 /* MSGImessageFooterView.swift */,
 				696FAD56A94EE449AF95CB133DCF4C9C /* MSGImessageHeaderView.swift */,
 			);
-			name = iMessage;
 			path = iMessage;
 			sourceTree = "<group>";
 		};
@@ -551,7 +533,6 @@
 				69827E948535C067456C10994EA9C557 /* iMessage */,
 				06B4EC3D54C35A06D3DBCC1352994E60 /* Travamigos */,
 			);
-			name = Styles;
 			path = Styles;
 			sourceTree = "<group>";
 		};
@@ -561,7 +542,6 @@
 				4966158D5DC31593C5910B537E075AC4 /* MSGTravCollectionViewSectionFooter.swift */,
 				DED9331895DEE32E356A9644288E67F3 /* MSGTravCollectionViewSectionHeader.swift */,
 			);
-			name = Travamigos;
 			path = Travamigos;
 			sourceTree = "<group>";
 		};
@@ -592,7 +572,6 @@
 				2D3A92B67EF97B58722E1D78C5E7573F /* iMessage */,
 				6EEBDC3B70DCEDE9E5DA079FD7AB6824 /* Travamigos */,
 			);
-			name = Text;
 			path = Text;
 			sourceTree = "<group>";
 		};
@@ -601,7 +580,6 @@
 			children = (
 				41BFBE3EA34D09470380CF98439B57E2 /* MSGEmojiCollectionViewCell.swift */,
 			);
-			name = Emoji;
 			path = Emoji;
 			sourceTree = "<group>";
 		};
@@ -625,7 +603,6 @@
 			children = (
 				62505F818B6D3656862E7A5561D48D47 /* MSGTravCollectionViewCell.swift */,
 			);
-			name = Travamigos;
 			path = Travamigos;
 			sourceTree = "<group>";
 		};
@@ -643,7 +620,6 @@
 				4DD3D695F2CCE3CFA6ED20D771DBB535 /* MSGIncomingImageCollectionViewCell.xib */,
 				8303BCF0770DE6B88DE25B59FE87D8A9 /* MSGOutgoingImageCollectionViewCell.xib */,
 			);
-			name = Media;
 			path = Media;
 			sourceTree = "<group>";
 		};
@@ -662,7 +638,6 @@
 			children = (
 				15B9570A97D3E5C149DE42910BF96E3E /* iMessage */,
 			);
-			name = Styles;
 			path = Styles;
 			sourceTree = "<group>";
 		};
@@ -698,7 +673,6 @@
 				108302CBE7D2F0CD0ACDE412B8A58B0E /* iMessage */,
 				34E1ECF2216EECC68B25A4BE8FC45534 /* Travamigos */,
 			);
-			name = "Header Footers";
 			path = "Header Footers";
 			sourceTree = "<group>";
 		};
@@ -708,7 +682,6 @@
 				A9933FECF8BB91595EFDDC2A5973079A /* MSGIncomingEmojiCollectionViewCell.xib */,
 				EBEB6F3B52A909B4DA9E71A3718A61E3 /* MSGOutgoingEmojiCollectionViewCell.xib */,
 			);
-			name = Emoji;
 			path = Emoji;
 			sourceTree = "<group>";
 		};
@@ -729,7 +702,6 @@
 				50C78F1E1CF97ABC418938E5552F5E86 /* MSGTailIncomingBubble.swift */,
 				8470B359B3B22B3613EFC2717B9AAF8F /* MSGTailOutgoingBubble.swift */,
 			);
-			name = iMessage;
 			path = iMessage;
 			sourceTree = "<group>";
 		};
@@ -924,8 +896,8 @@
 				7E834729482D50128A6057A194BD25BD /* MSGMessengerViewController + Helpers.swift in Sources */,
 				59F8FC1E8B3F63A212E9BE61BD9EEEE8 /* MSGMessengerViewController.swift in Sources */,
 				EA9662502A62097315590C96DDBCBEB6 /* MSGPlaceholderTextView.swift in Sources */,
-				9662B34DEB5DC84AD99FCD1F45803808 /* MSGSectionInfoProvider.swift in Sources */,
-				F65D4642DBDF96912221B1EDA9E806D9 /* MSGSectionInfoProviderDelegate.swift in Sources */,
+				9662B34DEB5DC84AD99FCD1F45803808 /* MSGSectionReusableView.swift in Sources */,
+				F65D4642DBDF96912221B1EDA9E806D9 /* MSGSectionReusableViewDelegate.swift in Sources */,
 				AF5FEF1EBA328F60F849A80B16D04BEE /* MSGTailCollectionViewCell.swift in Sources */,
 				6867323E3471BA17A0437EC2D1E8A9D2 /* MSGTailIncomingBubble.swift in Sources */,
 				C8F756BA008E2CEFD9352BCCAC00976C /* MSGTailOutgoingBubble.swift in Sources */,

@@ -8,7 +8,7 @@
 
 import UIKit
 
-extension MSGMessengerViewController: UICollectionViewDataSource, UICollectionViewDelegateFlowLayout, UICollectionViewDataSourcePrefetching {
+extension MSGMessengerViewController: UICollectionViewDataSource, UICollectionViewDelegateFlowLayout, UICollectionViewDataSourcePrefetching, MSGSectionReusableViewDelegate {
     
     // MARK: - DataSource
     
@@ -148,6 +148,7 @@ extension MSGMessengerViewController: UICollectionViewDataSource, UICollectionVi
             
             footer.message = message
             footer.style = style
+            footer.delegate = self
             footer.title = dataSource?.footerTitle(for: indexPath.section)
             
             return footer
@@ -160,6 +161,7 @@ extension MSGMessengerViewController: UICollectionViewDataSource, UICollectionVi
             
             header.message = message
             header.style = style
+            header.delegate = self
             header.title = dataSource?.headerTitle(for: indexPath.section)
             
             return header
@@ -182,6 +184,10 @@ extension MSGMessengerViewController: UICollectionViewDataSource, UICollectionVi
         }
         
         return CGSize(width: collectionView.bounds.width, height: style.footerHeight)
+    }
+    
+    func reusableViewAvatarTapped(for user: MSGUser) {
+        delegate?.avatarTapped(for: user)
     }
     
 }
