@@ -49,7 +49,7 @@ Drag the contents of the `MessengerKit` folder into your Xcode Project.
 Add the following to your project's Podfile.
 
 ```ruby
-pod 'MessengerKit', :git => 'git@github.com:steve228uk/MessengerKit.git'
+pod 'MessengerKit', :git => 'https://github.com/steve228uk/MessengerKit.git'
 ```
 
 ### Carthage
