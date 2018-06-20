@@ -133,6 +133,14 @@ open class MSGPlaceholderTextView: UIView {
         textView.delegate = self
     }
     
+    open override func resignFirstResponder() -> Bool {
+        return textView.resignFirstResponder()
+    }
+    
+    open override func becomeFirstResponder() -> Bool {
+        return textView.becomeFirstResponder()
+    }
+    
 }
 
 extension MSGPlaceholderTextView: UITextViewDelegate {

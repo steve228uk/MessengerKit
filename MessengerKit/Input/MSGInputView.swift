@@ -105,6 +105,14 @@ open class MSGInputView: UIControl {
         textView.text = nil
         sendActions(for: .primaryActionTriggered)
     }
+    
+    @discardableResult open override func resignFirstResponder() -> Bool {
+        return textView.resignFirstResponder()
+    }
+    
+    @discardableResult open override func becomeFirstResponder() -> Bool {
+        return textView.becomeFirstResponder()
+    }
 
 }
 

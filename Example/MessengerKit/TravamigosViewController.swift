@@ -86,6 +86,8 @@ class TravamigosViewController: MSGMessengerViewController {
         
         let message = MSGMessage(id: id, body: body, user: steve, sentAt: Date())
         insert(message)
+        
+        inputView.resignFirstResponder()
     }
     
     override func insert(_ message: MSGMessage) {
