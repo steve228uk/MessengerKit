@@ -10,7 +10,7 @@ import UIKit
 
 open class MSGImessageInputView: MSGInputView {
     
-    override public class var nib: UINib? {
+    override open class var nib: UINib? {
         return UINib(nibName: "MSGImessageInputView",
                      bundle: MessengerKit.bundle)
     }
