@@ -77,6 +77,15 @@ extension MSGMessengerViewController: UICollectionViewDataSource, UICollectionVi
         case .video:
             fatalError("video cell not defined")
             break
+            
+        case .custom:
+            let identifier = message.user.isSender ? "outgoingCustom" : "incomingCustom"
+            let cell = collectionView.dequeueReusableCell(withReuseIdentifier: identifier, for: indexPath) as! MSGMessageCell
+            
+            cell.delegate = self
+            cell.message = message
+            
+            return cell
         }
         
     }
