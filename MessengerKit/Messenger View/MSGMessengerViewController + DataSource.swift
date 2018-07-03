@@ -34,9 +34,7 @@ extension MSGMessengerViewController: UICollectionViewDataSource, UICollectionVi
             let identifier = message.user.isSender ? "outgoingText" : "incomingText"
             let cell = collectionView.dequeueReusableCell(withReuseIdentifier: identifier, for: indexPath) as! MSGMessageCell
             
-            // TODO: set the delegate here
             cell.delegate = self
-            
             cell.message = message
             cell.style = style
             cell.isLastInSection = isLast
@@ -56,8 +54,9 @@ extension MSGMessengerViewController: UICollectionViewDataSource, UICollectionVi
             let cell = collectionView.dequeueReusableCell(withReuseIdentifier: identifier, for: indexPath) as! MSGMessageCell
             
             cell.delegate = self
-            
             cell.message = message
+            cell.style = style
+            cell.isLastInSection = isLast
             
             return cell
             
@@ -68,15 +67,24 @@ extension MSGMessengerViewController: UICollectionViewDataSource, UICollectionVi
             let cell = collectionView.dequeueReusableCell(withReuseIdentifier: identifier, for: indexPath) as! MSGMessageCell
             
             cell.delegate = self
-            
             cell.message = message
+            cell.style = style
+            cell.isLastInSection = isLast
             
             return cell
             
             
         case .video:
-            fatalError("video cell not defined")
-            break
+            
+            let identifier = message.user.isSender ? "outgoingVideo" : "incomingVideo"
+            let cell = collectionView.dequeueReusableCell(withReuseIdentifier: identifier, for: indexPath) as! MSGMessageCell
+            
+            cell.delegate = self
+            cell.message = message
+            cell.style = style
+            cell.isLastInSection = isLast
+            
+            return cell
             
         case .custom:
             let identifier = message.user.isSender ? "outgoingCustom" : "incomingCustom"
@@ -84,6 +92,8 @@ extension MSGMessengerViewController: UICollectionViewDataSource, UICollectionVi
             
             cell.delegate = self
             cell.message = message
+            cell.style = style
+            cell.isLastInSection = isLast
             
             return cell
         }
