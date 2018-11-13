@@ -126,6 +126,8 @@ open class MSGPlaceholderTextView: UIView {
         label.font = UIFont.systemFont(ofSize: 14, weight: .medium)
         label.textColor = .lightGray
         label.decideTextDirection()
+        label.backgroundColor = UIColor.yellow
+        label.textAlignment = .right
     }
     
     private func styleTextView() {
