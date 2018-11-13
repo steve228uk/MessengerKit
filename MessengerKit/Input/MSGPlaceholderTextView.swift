@@ -143,6 +143,19 @@ open class MSGPlaceholderTextView: UIView {
         return textView.becomeFirstResponder()
     }
 }
+extension MSGPlaceholderTextView: UITextViewDelegate {
+    
+    public func textViewDidChange(_ textView: UITextView) {
+        delegate?.textViewDidChange(textView)
+        label.isHidden = textView.text != ""
+    }
+    
+}
+
+public protocol MSGPlaceholderTextViewDelegate: NSObjectProtocol {
+    
+    func textViewDidChange(_ textView: UITextView)
+}
 extension UILabel {
     func decideTextDirection () {
         let tagScheme = [NSLinguisticTagScheme.language]
