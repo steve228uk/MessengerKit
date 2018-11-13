@@ -26,6 +26,7 @@ open class MSGPlaceholderTextView: UIView {
     public var placeholder: String = "Type something…" {
         didSet {
             label.text = placeholder
+            label.decideTextDirection()
         }
     }
     
@@ -125,6 +126,7 @@ open class MSGPlaceholderTextView: UIView {
         label.text = placeholder
         label.font = UIFont.systemFont(ofSize: 14, weight: .medium)
         label.textColor = .lightGray
+        label.decideTextDirection()
     }
     
     private func styleTextView() {
@@ -140,20 +142,18 @@ open class MSGPlaceholderTextView: UIView {
     open override func becomeFirstResponder() -> Bool {
         return textView.becomeFirstResponder()
     }
-    
-}
-
-extension MSGPlaceholderTextView: UITextViewDelegate {
-    
-    public func textViewDidChange(_ textView: UITextView) {
-        delegate?.textViewDidChange(textView)
-        label.isHidden = textView.text != ""
-    }
-    
-}
-
-public protocol MSGPlaceholderTextViewDelegate: NSObjectProtocol {
-    
-    func textViewDidChange(_ textView: UITextView)
-    
+    extension UILabel {
+        func decideTextDirection () {
+            let tagScheme = [NSLinguisticTagScheme.language]
+            let tagger    = NSLinguisticTagger(tagSchemes: tagScheme, options: 0)
+            tagger.string = self.text
+            let lang = tagger.tag(at: 0, scheme: NSLinguisticTagScheme.language,
+                                  tokenRange: nil, sentenceRange: nil)
+            
+            if lang?.rawValue.range(of:"ar") != nil {
+                self.textAlignment = NSTextAlignment.right
+            } else {
+                self.textAlignment = NSTextAlignment.left
+            }
+        }
 }
