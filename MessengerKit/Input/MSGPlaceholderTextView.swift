@@ -142,18 +142,19 @@ open class MSGPlaceholderTextView: UIView {
     open override func becomeFirstResponder() -> Bool {
         return textView.becomeFirstResponder()
     }
-    extension UILabel {
-        func decideTextDirection () {
-            let tagScheme = [NSLinguisticTagScheme.language]
-            let tagger    = NSLinguisticTagger(tagSchemes: tagScheme, options: 0)
-            tagger.string = self.text
-            let lang = tagger.tag(at: 0, scheme: NSLinguisticTagScheme.language,
-                                  tokenRange: nil, sentenceRange: nil)
-            
-            if lang?.rawValue.range(of:"ar") != nil {
-                self.textAlignment = NSTextAlignment.right
-            } else {
-                self.textAlignment = NSTextAlignment.left
-            }
+}
+extension UILabel {
+    func decideTextDirection () {
+        let tagScheme = [NSLinguisticTagScheme.language]
+        let tagger    = NSLinguisticTagger(tagSchemes: tagScheme, options: 0)
+        tagger.string = self.text
+        let lang = tagger.tag(at: 0, scheme: NSLinguisticTagScheme.language,
+                              tokenRange: nil, sentenceRange: nil)
+        
+        if lang?.rawValue.range(of:"ar") != nil {
+            self.textAlignment = NSTextAlignment.right
+        } else {
+            self.textAlignment = NSTextAlignment.left
         }
+    }
 }
