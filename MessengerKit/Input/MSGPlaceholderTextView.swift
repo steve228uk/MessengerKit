@@ -25,9 +25,9 @@ open class MSGPlaceholderTextView: UIView {
     @IBInspectable
     public var placeholder: String = "Type something…" {
         didSet {
-            label.text = placeholder
-            label.decideTextDirection()
-            label.backgroundColor = UIColor.yellow
+//            label.text = placeholder
+//            label.decideTextDirection()
+//            label.backgroundColor = UIColor.yellow
         }
     }
     
