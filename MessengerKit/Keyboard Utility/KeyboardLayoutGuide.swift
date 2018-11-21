@@ -45,6 +45,7 @@ public class KeyboardLayoutGuide : UILayoutGuide {
                 topConstraint.constant = view.bounds.height - keyboardFrame.origin.y
                 heightConstraint.constant = keyboardFrame.height
                 print("keyboardFrame Height:\(keyboardFrame.height)")
+                print("keyboardFrame origin y:\(keyboardFrame.origin.y)")
                 if animated {
                     view.layoutIfNeeded()
                 }
