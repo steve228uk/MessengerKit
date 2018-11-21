@@ -19,6 +19,7 @@ public class KeyboardLayoutGuide : UILayoutGuide {
                 observer = nil
                 return
             }
+            print("kblg view did set")
             
             let topConstraint = view.bottomAnchor.constraint(equalTo: topAnchor)
             topConstraint.priority = .defaultHigh
@@ -38,12 +39,14 @@ public class KeyboardLayoutGuide : UILayoutGuide {
             } else {
                 topAnchor.constraint(lessThanOrEqualTo: view.bottomAnchor).isActive = true
             }
-            
+            print("kblg topConstraint:\(topConstraint.constant)")
+            print("kblg heightConstraint:\(heightConstraint.constant)")
             observer = KeyboardFrameObserver(view: view) { [weak view] keyboardFrame, animated in
                 guard let view = view else { return }
                 
                 topConstraint.constant = view.bounds.height - keyboardFrame.origin.y
                 heightConstraint.constant = keyboardFrame.height
+                 print("kblg observer heightConstraint:\(heightConstraint.constant)")
                 if animated {
                     view.layoutIfNeeded()
                 }
