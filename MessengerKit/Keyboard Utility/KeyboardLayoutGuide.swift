@@ -61,6 +61,5 @@ public class KeyboardLayoutGuide : UILayoutGuide {
         } else {
             topAnchor.constraint(lessThanOrEqualTo: view.bottomAnchor).isActive = true
         }
-        owningView = nil
     }
 }
