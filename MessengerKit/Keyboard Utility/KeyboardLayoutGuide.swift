@@ -44,12 +44,23 @@ public class KeyboardLayoutGuide : UILayoutGuide {
                 
                 topConstraint.constant = view.bounds.height - keyboardFrame.origin.y
                 heightConstraint.constant = keyboardFrame.height
-                print("keyboardFrame Height:\(keyboardFrame.height)")
-                print("keyboardFrame origin y:\(keyboardFrame.origin.y)")
                 if animated {
                     view.layoutIfNeeded()
                 }
             }
         }
+    }
+    func reset() {
+        guard let view = owningView else {
+            observer = nil
+            return
+        }
+         heightAnchor.constraint(equalToConstant: 0).isActive = true
+        if #available(iOS 11.0, *) {
+            topAnchor.constraint(lessThanOrEqualTo: view.safeAreaLayoutGuide.bottomAnchor).isActive = true
+        } else {
+            topAnchor.constraint(lessThanOrEqualTo: view.bottomAnchor).isActive = true
+        }
+        owningView = nil
     }
 }
