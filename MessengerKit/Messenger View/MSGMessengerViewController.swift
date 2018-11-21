@@ -194,7 +194,6 @@ open class MSGMessengerViewController: UIViewController {
     // MARK: - Keyboard
     
     @objc open dynamic func keyboardWillShow(_ notification: Notification) {
-        collectionView.scrollToBottom(animated: false)
     }
     
     // MARK: - Users Typing
