@@ -121,7 +121,6 @@ open class MSGMessengerViewController: UIViewController {
         super.viewDidDisappear(animated)
         
         NotificationCenter.default.removeObserver(self)
-        keyboardLayoutGuide.reset()
         view.removeLayoutGuide(keyboardLayoutGuide)
     }
     
