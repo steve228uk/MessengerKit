@@ -71,7 +71,7 @@ class MSGTravOutgoingBubble: UITextView {
         textContainerInset = UIEdgeInsets(top: 15, left: 20, bottom: 15, right: 20)
         textContainer.lineFragmentPadding = 0
         
-        linkTextAttributes[NSAttributedStringKey.underlineStyle.rawValue] = NSUnderlineStyle.styleSingle.rawValue
+        linkTextAttributes = [NSAttributedString.Key.underlineColor: NSUnderlineStyle.single.rawValue]
         
         addGradientLayer()
     }
@@ -98,7 +98,7 @@ class MSGTravOutgoingBubble: UITextView {
         }
         
         guard let range = tokenizer.rangeEnclosingPosition(pos, with: .character,
-                                                           inDirection: UITextLayoutDirection.left.rawValue) else {
+                                                           inDirection: UITextDirection(rawValue: UITextLayoutDirection.left.rawValue)) else {
                                                             return false
         }
         

@@ -21,7 +21,7 @@ open class MSGImessageCollectionViewFlowLayout: UICollectionViewFlowLayout {
     }
     
     open func setup() {
-        sectionInset = UIEdgeInsetsMake(5, 0, 5, 0)
+        sectionInset = UIEdgeInsets(top: 5, left: 0, bottom: 5, right: 0)
         minimumLineSpacing = 5
     }
     

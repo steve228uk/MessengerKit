@@ -16,8 +16,8 @@ class KeyboardFrameObserversManager : NSObject {
         super.init()
         
         let center = NotificationCenter.default
-        center.addObserver(self, selector: #selector(keyboardWillChangeFrame), name: .UIKeyboardWillChangeFrame, object: nil)
-        center.addObserver(self, selector: #selector(keyboardDidChangeFrame), name: .UIKeyboardDidChangeFrame, object: nil)
+        center.addObserver(self, selector: #selector(keyboardWillChangeFrame), name: UIResponder.keyboardWillChangeFrameNotification, object: nil)
+        center.addObserver(self, selector: #selector(keyboardDidChangeFrame), name: UIResponder.keyboardDidChangeFrameNotification, object: nil)
     }
     
     private let observers: NSHashTable<KeyboardFrameObserver> = NSHashTable.weakObjects()
@@ -60,7 +60,7 @@ class KeyboardFrameObserversManager : NSObject {
             if isEnabled {
                 // KVO host view's frame sometimes can't get updated values. So instead, we use display link pulling.
                 displayLink = CADisplayLink(target: self, selector: #selector(handleDisplayLink))
-                displayLink?.add(to: RunLoop.main, forMode: .commonModes)
+                displayLink?.add(to: RunLoop.main, forMode: RunLoop.Mode.common)
             } else {
                 displayLink = nil
             }
@@ -134,7 +134,7 @@ class KeyboardFrameObserversManager : NSObject {
     
     @objc private func keyboardWillChangeFrame(_ notification: Notification) {
         // endFrame == .zero, means the keyboard's frame is currently freely changed in iPad Undock mode.
-        let endFrame = notification.userInfo?[UIKeyboardFrameEndUserInfoKey] as? CGRect ?? .zero
+        let endFrame = notification.userInfo?[UIResponder.keyboardFrameEndUserInfoKey] as? CGRect ?? .zero
         if endFrame != .zero {
             updateKeyboardFrameForObservers(animated: true)
         }

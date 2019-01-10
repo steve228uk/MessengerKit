@@ -159,7 +159,7 @@ extension MSGMessengerViewController: UICollectionViewDataSource, UICollectionVi
         }
         
         switch kind {
-        case UICollectionElementKindSectionFooter:
+        case UICollectionView.elementKindSectionFooter:
             
             
             let identifier = message.user.isSender ? "outgoingFooter" : "incomingFooter"

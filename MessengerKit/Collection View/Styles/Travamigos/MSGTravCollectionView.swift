@@ -42,17 +42,17 @@ open class MSGTravCollectionView: MSGCollectionView {
         // Footers
         
         register(UINib(nibName: "MSGTravOutgoingCollectionViewSectionFooter", bundle: MessengerKit.bundle),
-                 forSupplementaryViewOfKind: UICollectionElementKindSectionFooter, withReuseIdentifier: "outgoingFooter")
+                 forSupplementaryViewOfKind: UICollectionView.elementKindSectionFooter, withReuseIdentifier: "outgoingFooter")
         register(UINib(nibName: "MSGTravIncomingCollectionViewSectionFooter", bundle: MessengerKit.bundle),
-                 forSupplementaryViewOfKind: UICollectionElementKindSectionFooter, withReuseIdentifier: "incomingFooter")
+                 forSupplementaryViewOfKind: UICollectionView.elementKindSectionFooter, withReuseIdentifier: "incomingFooter")
         
         // Headers
         
         register(UINib(nibName: "MSGTravOutgoingCollectionViewSectionHeader", bundle: MessengerKit.bundle),
-                 forSupplementaryViewOfKind: UICollectionElementKindSectionHeader, withReuseIdentifier: "outgoingHeader")
+                 forSupplementaryViewOfKind: UICollectionView.elementKindSectionHeader, withReuseIdentifier: "outgoingHeader")
         
         register(UINib(nibName: "MSGTravIncomingCollectionViewSectionHeader", bundle: MessengerKit.bundle),
-                 forSupplementaryViewOfKind: UICollectionElementKindSectionHeader, withReuseIdentifier: "incomingHeader")
+                 forSupplementaryViewOfKind: UICollectionView.elementKindSectionHeader, withReuseIdentifier: "incomingHeader")
     }
 
 }
