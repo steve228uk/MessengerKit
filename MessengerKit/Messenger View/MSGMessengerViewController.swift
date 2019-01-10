@@ -138,6 +138,7 @@ open class MSGMessengerViewController: UIViewController {
         let view = UINib(nibName: "MSGMessengerView", bundle: MessengerKit.bundle)
             .instantiate(withOwner: self, options: nil).first as? MSGMessengerView
         
+        view?.frame = CGRect.zero
         view?.backgroundView.backgroundColor = style.inputViewBackgroundColor
         view?.add(collectionView)
         view?.add(messageInputView)
