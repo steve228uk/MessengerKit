@@ -13,10 +13,10 @@ import UIKit
 open class MSGInputView: UIControl {
 
     /// The text view used for text input
-    @IBOutlet public var textView: MSGPlaceholderTextView!
+    @IBOutlet open var textView: MSGPlaceholderTextView!
 
     /// The send button
-    @IBOutlet public var sendButton: UIButton!
+    @IBOutlet open var sendButton: UIButton!
 
     /// The height constraint to be modified as required.
     /// This should not be set manually but instead use the `minHeight` and `maxHeight` properties.
@@ -30,7 +30,7 @@ open class MSGInputView: UIControl {
     
     /// The nib the view should be loaded from.
     /// If this isn't set the view will be loaded from code.
-    public class var nib: UINib? { return nil }
+    open class var nib: UINib? { return nil }
     
     /// The style guide the input view should use.
     public var style: MSGMessengerStyle? {
