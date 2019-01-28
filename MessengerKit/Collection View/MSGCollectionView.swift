@@ -92,7 +92,7 @@ open class MSGCollectionView: UICollectionView {
 
         typingLabel = UILabel()
         addSubview(typingLabel)
-        bringSubview(toFront: typingLabel)
+        bringSubviewToFront(typingLabel)
         
     }
     

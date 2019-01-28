@@ -73,7 +73,7 @@ open class MSGMessengerViewController: UIViewController {
     }
     
     /// How the keyboard should be dismissed by the Messenger View Controller
-    open var keyboardDismissMode: UIScrollViewKeyboardDismissMode = .interactive {
+    open var keyboardDismissMode: UIScrollView.KeyboardDismissMode = .interactive {
         didSet {
             collectionView.keyboardDismissMode = keyboardDismissMode
         }
@@ -110,7 +110,7 @@ open class MSGMessengerViewController: UIViewController {
         super.viewWillAppear(animated)
         
         // Setup an observer so we can detect the keyboard appearing and keep the collectionview at the bottom
-        NotificationCenter.default.addObserver(self, selector: #selector(keyboardWillShow(_:)), name: NSNotification.Name.UIKeyboardWillShow, object: nil)
+        NotificationCenter.default.addObserver(self, selector: #selector(keyboardWillShow(_:)), name: UIResponder.keyboardWillShowNotification, object: nil)
         
         if shouldScrollToBottom {
             collectionView.scrollToBottom(animated: true)
@@ -138,6 +138,7 @@ open class MSGMessengerViewController: UIViewController {
         let view = UINib(nibName: "MSGMessengerView", bundle: MessengerKit.bundle)
             .instantiate(withOwner: self, options: nil).first as? MSGMessengerView
         
+        view?.frame = CGRect.zero
         view?.backgroundView.backgroundColor = style.inputViewBackgroundColor
         view?.add(collectionView)
         view?.add(messageInputView)
@@ -169,7 +170,7 @@ open class MSGMessengerViewController: UIViewController {
         collectionView.prefetchDataSource = self
         collectionView.isPrefetchingEnabled = true
         
-        collectionView.contentInset = UIEdgeInsetsMake(16, 0, 16, 0)
+        collectionView.contentInset = UIEdgeInsets(top: 16, left: 0, bottom: 16, right: 0)
         
         collectionView.addObserver(self, forKeyPath: "contentSize", options: .old, context: nil)
     }

@@ -20,7 +20,7 @@ public class MSGTailIncomingBubble: MSGTailOutgoingBubble {
         )
         
         let resizableImage = image?.resizableImage(
-            withCapInsets: UIEdgeInsetsMake(10, 20, 10, 10),
+            withCapInsets: UIEdgeInsets(top: 10, left: 20, bottom: 10, right: 10),
             resizingMode: .stretch
         )
         
@@ -37,7 +37,7 @@ public class MSGTailIncomingBubble: MSGTailOutgoingBubble {
         )
         
         let resizableImage = image?.resizableImage(
-            withCapInsets: UIEdgeInsetsMake(10, 20, 10, 10),
+            withCapInsets: UIEdgeInsets(top: 10, left: 20, bottom: 10, right: 10),
             resizingMode: .stretch
         )
         

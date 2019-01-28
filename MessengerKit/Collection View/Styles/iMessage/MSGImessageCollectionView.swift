@@ -41,17 +41,17 @@ open class MSGImessageCollectionView: MSGCollectionView {
         // Footers
         
         register(UINib(nibName: "MSGImessageOutgoingFooterView", bundle: MessengerKit.bundle),
-                 forSupplementaryViewOfKind: UICollectionElementKindSectionFooter, withReuseIdentifier: "outgoingFooter")
+                 forSupplementaryViewOfKind: UICollectionView.elementKindSectionFooter, withReuseIdentifier: "outgoingFooter")
         register(UINib(nibName: "MSGImessageIncomingFooterView", bundle: MessengerKit.bundle),
-                 forSupplementaryViewOfKind: UICollectionElementKindSectionFooter, withReuseIdentifier: "incomingFooter")
+                 forSupplementaryViewOfKind: UICollectionView.elementKindSectionFooter, withReuseIdentifier: "incomingFooter")
         
         // Headers
         
         register(UINib(nibName: "MSGImessageOutgoingHeaderView", bundle: MessengerKit.bundle),
-                 forSupplementaryViewOfKind: UICollectionElementKindSectionHeader, withReuseIdentifier: "outgoingHeader")
+                 forSupplementaryViewOfKind: UICollectionView.elementKindSectionHeader, withReuseIdentifier: "outgoingHeader")
         
         register(UINib(nibName: "MSGImessageIncomingHeaderView", bundle: MessengerKit.bundle),
-                 forSupplementaryViewOfKind: UICollectionElementKindSectionHeader, withReuseIdentifier: "incomingHeader")
+                 forSupplementaryViewOfKind: UICollectionView.elementKindSectionHeader, withReuseIdentifier: "incomingHeader")
     }
 
 }

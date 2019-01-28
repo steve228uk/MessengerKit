@@ -21,7 +21,7 @@ open class MSGTravCollectionViewFlowLayout: UICollectionViewFlowLayout {
     }
     
     open func setup() {
-        sectionInset = UIEdgeInsetsMake(5, 0, -15, 0)
+        sectionInset = UIEdgeInsets(top: 5, left: 0, bottom: -15, right: 0)
     }
     
 }

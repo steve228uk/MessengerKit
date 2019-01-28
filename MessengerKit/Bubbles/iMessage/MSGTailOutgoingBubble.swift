@@ -20,7 +20,7 @@ public class MSGTailOutgoingBubble: UITextView {
         )
         
         let resizableImage = image?.resizableImage(
-            withCapInsets: UIEdgeInsetsMake(10, 10, 10, 20),
+            withCapInsets: UIEdgeInsets(top: 10, left: 10, bottom: 10, right: 20),
             resizingMode: .stretch
         )
         
@@ -37,7 +37,7 @@ public class MSGTailOutgoingBubble: UITextView {
         )
         
         let resizableImage = image?.resizableImage(
-            withCapInsets: UIEdgeInsetsMake(10, 10, 10, 20),
+            withCapInsets: UIEdgeInsets(top: 10, left: 10, bottom: 10, right: 20),
             resizingMode: .stretch
         )
         
@@ -99,7 +99,7 @@ public class MSGTailOutgoingBubble: UITextView {
         backgroundColor = .clear
         textColor = .white
         
-        linkTextAttributes[NSAttributedStringKey.underlineStyle.rawValue] = NSUnderlineStyle.styleSingle.rawValue
+        linkTextAttributes = [NSAttributedString.Key.underlineColor: NSUnderlineStyle.single.rawValue]
         
         addBackground()
         
@@ -123,7 +123,7 @@ public class MSGTailOutgoingBubble: UITextView {
         }
         
         guard let range = tokenizer.rangeEnclosingPosition(pos, with: .character,
-                                                           inDirection: UITextLayoutDirection.left.rawValue) else {
+                                                           inDirection: UITextDirection(rawValue: UITextLayoutDirection.left.rawValue)) else {
                                                             return false
         }
         
