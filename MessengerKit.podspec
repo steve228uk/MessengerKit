@@ -8,7 +8,7 @@
 
 Pod::Spec.new do |s|
   s.name             = 'MessengerKit'
-  s.version          = '1.0.3'
+  s.version          = '1.0.4'
   s.summary          = 'A UI framework for building messenger interfaces on iOS'
 
 # This description is used to generate tags and improve search results.
@@ -38,7 +38,7 @@ The framework was built for and is used in production at [Travamigos](https://tr
   s.social_media_url = 'https://twitter.com/steve228uk'
 
   s.ios.deployment_target = '10.0'
-  s.swift_version = '4.0'
+  s.swift_version = '4.2'
 
   s.source_files = ['MessengerKit/**/*.{h,m,swift}']
   s.resource_bundle = { 'MessengerKit' => 'MessengerKit/**/*.{xcassets,xib,nib}' }
