@@ -33,8 +33,8 @@ class CustomTextCell: MSGMessageCell {
         didSet {
             guard let style = style as? CustomStyle, let message = message else { return }
             bubble.layer.borderColor = message.user.isSender ? style.outgoingBorderColor.cgColor : style.incomingBorderColor.cgColor
-            bubble.linkTextAttributes[NSAttributedStringKey.underlineColor.rawValue] = style.outgoingLinkColor
-            bubble.linkTextAttributes[NSAttributedStringKey.foregroundColor.rawValue] = style.outgoingLinkColor
+            bubble.linkTextAttributes = [NSAttributedString.Key.underlineColor: style.outgoingLinkColor]
+            bubble.linkTextAttributes = [NSAttributedString.Key.foregroundColor: style.outgoingLinkColor]
             bubble.font = style.font
             bubble.textColor = message.user.isSender ? style.outgoingTextColor : style.incomingTextColor
         }

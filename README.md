@@ -38,7 +38,7 @@ The framework was built for and is used in production at [Travamigos](https://tr
 
 ## Installation
 
-MessengerKit requires Swift 4.0 and iOS 10.0 or later.
+MessengerKit requires Swift 4.2 and iOS 10.0 or later.
 
 ### Manual
 
@@ -51,10 +51,6 @@ Add the following to your project's Podfile.
 ```ruby
 pod 'MessengerKit', :git => 'https://github.com/steve228uk/MessengerKit.git'
 ```
-
-### Carthage
-
-Coming soon.
 
 ## Credits
 
