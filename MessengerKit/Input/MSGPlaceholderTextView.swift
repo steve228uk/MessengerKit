@@ -29,7 +29,7 @@ open class MSGPlaceholderTextView: UIView {
         }
     }
     
-    var text: String! {
+    public var text: String! {
         get {
             return textView.text
         }
