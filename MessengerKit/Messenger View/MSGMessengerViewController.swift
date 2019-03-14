@@ -173,7 +173,7 @@ open class MSGMessengerViewController: UIViewController {
 			collectionView.isPrefetchingEnabled = true
 		}
         
-        collectionView.contentInset = UIEdgeInsets(top: 44, left: 0, bottom: 16, right: 0)
+        collectionView.contentInset = UIEdgeInsets(top: 16, left: 0, bottom: 16, right: 0)
         
         collectionView.addObserver(self, forKeyPath: "contentSize", options: .old, context: nil)
     }
