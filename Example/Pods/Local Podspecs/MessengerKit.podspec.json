@@ -1,8 +1,8 @@
 {
   "name": "MessengerKit",
-  "version": "0.1.0",
-  "summary": "A short description of MessengerKit.",
-  "description": "TODO: Add long description of the pod here.",
+  "version": "1.0.4",
+  "summary": "A UI framework for building messenger interfaces on iOS",
+  "description": "MessengerKit is a drop-in UI for messenger interfaces on iOS built in Swift. Centred around a single `UIViewController`, MessengerKit is themeable to fit your needs and includes a number of powerful features:\n\n- `UICollectionView` based with pre-loading and caching of size calculation for bubbles.\n- Auto-growing input view.\n- Multiple included cell types: text, large-emoji, image, video.\n- Presentation of `SFSafariViewController`\n- Built-in, customisable themes.\n- A custom theming system to bring your own `UICollectionViewCell`s, headers, footers, and input views.\n- Avatar support (currently only in the `travamigos` theme).\n\nThe framework was built for and is used in production at [Travamigos](https://travamigos.com).",
   "homepage": "https://github.com/steve228uk/MessengerKit",
   "license": {
     "type": "MIT",
@@ -13,11 +13,13 @@
   },
   "source": {
     "git": "https://github.com/steve228uk/MessengerKit.git",
-    "tag": "0.1.0"
+    "tag": "1.0.4"
   },
+  "social_media_url": "https://twitter.com/steve228uk",
   "platforms": {
-    "ios": "10.0"
+    "ios": "9.0"
   },
+  "swift_version": "4.2",
   "source_files": [
     "MessengerKit/**/*.{h,m,swift}"
   ],

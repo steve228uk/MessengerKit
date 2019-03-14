@@ -26,12 +26,22 @@ extension MSGMessengerViewController: MSGMessageCellDelegate {
         delegate.shouldDisplaySafari(for: url) {
             
             let vc = SFSafariViewController(url: url)
-            vc.preferredControlTintColor = tintColor
+			
+			if #available(iOS 10.0, *) {
+				vc.preferredControlTintColor = tintColor
+			}
+			
             present(vc, animated: true)
             
         } else if delegate.shouldOpen(url: url) {
             
-            UIApplication.shared.open(url, options: [:], completionHandler: nil)
+			if #available(iOS 10.0, *) {
+				UIApplication.shared.open(url, options: [:], completionHandler: nil)
+			} else {
+				if UIApplication.shared.canOpenURL(url) { 
+					UIApplication.shared.openURL(url)
+				}
+			}
         
         }
 

@@ -38,7 +38,7 @@ The framework was built for and is used in production at [Travamigos](https://tr
 
 ## Installation
 
-MessengerKit requires Swift 4.2 and iOS 10.0 or later.
+MessengerKit requires Swift 4.2 and iOS 9.0 or later.
 
 ### Manual
 

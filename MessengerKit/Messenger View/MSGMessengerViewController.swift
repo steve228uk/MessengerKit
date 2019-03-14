@@ -167,10 +167,13 @@ open class MSGMessengerViewController: UIViewController {
         
         collectionView.delegate = self
         collectionView.dataSource = self
-        collectionView.prefetchDataSource = self
-        collectionView.isPrefetchingEnabled = true
+		
+		if #available(iOS 10.0, *) {
+			collectionView.prefetchDataSource = self
+			collectionView.isPrefetchingEnabled = true
+		}
         
-        collectionView.contentInset = UIEdgeInsets(top: 16, left: 0, bottom: 16, right: 0)
+        collectionView.contentInset = UIEdgeInsets(top: 44, left: 0, bottom: 16, right: 0)
         
         collectionView.addObserver(self, forKeyPath: "contentSize", options: .old, context: nil)
     }
@@ -238,5 +241,4 @@ open class MSGMessengerViewController: UIViewController {
         collectionView.layoutTypingLabelIfNeeded()
         
     }
-    
 }

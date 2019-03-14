@@ -67,11 +67,19 @@ open class MSGTailCollectionViewCell: MSGMessageCell {
 
 extension MSGTailCollectionViewCell: UITextViewDelegate {
     
-    public func textView(_ textView: UITextView, shouldInteractWith URL: URL, in characterRange: NSRange, interaction: UITextItemInteraction) -> Bool {
-        
-        delegate?.cellLinkTapped(url: URL)
-        
-        return false
-    }
+	@available(iOS 10.0, *)
+	public func textView(_ textView: UITextView, shouldInteractWith URL: URL, in characterRange: NSRange, interaction: UITextItemInteraction) -> Bool {
+		
+		delegate?.cellLinkTapped(url: URL)
+		
+		return false
+	}
+	
+	public func textView(_ textView: UITextView, shouldInteractWith URL: URL, in characterRange: NSRange) -> Bool {
+		
+		delegate?.cellLinkTapped(url: URL)
+		
+		return false
+	}
     
 }

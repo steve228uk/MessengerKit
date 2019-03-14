@@ -88,7 +88,13 @@ public class MSGTailOutgoingBubble: UITextView {
         
         isEditable = false
         isSelectable = true // TODO: Check that links are tappable
-        dataDetectorTypes = [.flightNumber, .calendarEvent, .address, .phoneNumber, .link, .lookupSuggestion]
+		
+		if #available(iOS 10.0, *) {
+			dataDetectorTypes = [.flightNumber, .calendarEvent, .address, .phoneNumber, .link, .lookupSuggestion]
+		} else {
+			dataDetectorTypes = [.calendarEvent, .address, .phoneNumber, .link]
+		}
+		
         isUserInteractionEnabled = true
         delaysContentTouches = true
         font = UIFont.preferredFont(forTextStyle: .body)
