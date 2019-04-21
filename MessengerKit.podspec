@@ -41,6 +41,6 @@ The framework was built for and is used in production at [Travamigos](https://tr
   s.swift_version = '4.2'
 
   s.source_files = ['MessengerKit/**/*.{h,m,swift}']
-  s.resource_bundle = { 'MessengerKit' => 'MessengerKit/**/*.{xcassets,xib,nib}' }
-  
+  s.resources = 'MessengerKit/**/*.{xcassets,xib,nib}'
+
 end
