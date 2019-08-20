@@ -52,7 +52,9 @@ class ViewController: MSGMessengerViewController {
                 MSGMessage(id: 7, body: .text("Every. Single. Time."), user: tim, sentAt: Date()),
             ],
             [
-                MSGMessage(id: 8, body: .emoji("🙄😭"), user: steve, sentAt: Date())
+                MSGMessage(id: 8, body: .emoji("🙄😭"), user: steve, sentAt: Date()),
+                MSGMessage(id: 9, body: .imageFromUrl(URL(string: "https://placeimg.com/640/480/any")!), user: steve, sentAt: Date()
+                )
             ]
         ]
     }()
