@@ -21,6 +21,8 @@ public struct MSGIMessageStyle: MSGMessengerStyle {
     
     public var inputViewBackgroundColor: UIColor = .white
     
+    public var inputTextViewBackgroundColor : UIColor = .white
+    
     public var font: UIFont = .preferredFont(forTextStyle: .body)
     
     public var inputFont: UIFont = .systemFont(ofSize: 14)
