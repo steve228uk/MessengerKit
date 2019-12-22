@@ -21,6 +21,8 @@ public struct MSGTravamigosStyle: MSGMessengerStyle {
     
     public var inputViewBackgroundColor: UIColor = .white
     
+    public var inputTextViewBackgroundColor : UIColor = .white
+    
     public var font: UIFont = .systemFont(ofSize: 14, weight: .bold)
     
     public var inputFont: UIFont = .systemFont(ofSize: 14, weight: .bold)
