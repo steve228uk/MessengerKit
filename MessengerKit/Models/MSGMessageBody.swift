@@ -27,18 +27,23 @@ public enum MSGMessageBody {
 	/// Return the raw value representation from MSGMessageBody. it could be String, Image, URL or Custom object.
 	public var rawValue: Any {
 		switch self {
-			case .text(let text):
-				return text
-			case .emoji(let emoji):
-				return emoji
-			case .image(let image):
-				return image
-			case .imageFromUrl(let imageUrl):
-				return imageUrl
-			case .video(_, let video):
-				return video
-			case .custom(let value):
-				return value
+		case .text(let text):
+			return text
+		
+		case .emoji(let emoji):
+			return emoji
+		
+		case .image(let image):
+			return image
+		
+		case .imageFromUrl(let imageUrl):
+			return imageUrl
+		
+		case .video(_, let video):
+			return video
+		
+		case .custom(let value):
+			return value
 		}
 	}
 }
