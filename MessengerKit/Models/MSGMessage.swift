@@ -9,7 +9,7 @@
 import Foundation
 
 /// Represents a message within MessengerKit.
-public class MSGMessage: NSObject{
+open class MSGMessage: NSObject{
     
     /// A unique identifier for the message.
     /// This is used to cache bubble sizes for the messenger.
