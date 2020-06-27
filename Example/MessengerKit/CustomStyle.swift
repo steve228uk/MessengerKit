@@ -9,6 +9,11 @@
 import MessengerKit
 
 struct CustomStyle: MSGMessengerStyle {
+
+    var outgoingLinkUnderlineStyle: NSNumber = 0
+
+    var incomingLinkUnderlineStyle: NSNumber = 0
+
     var inputTextViewBackgroundColor: UIColor = UIColor.white
 
     var collectionView: MSGCollectionView.Type = CustomCollectionView.self
