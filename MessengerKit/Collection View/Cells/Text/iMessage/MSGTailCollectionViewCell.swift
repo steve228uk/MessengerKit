@@ -26,8 +26,11 @@ open class MSGTailCollectionViewCell: MSGMessageCell {
     override open var style: MSGMessengerStyle? {
         didSet {
             guard let message = message, let style = style as? MSGIMessageStyle else { return }
-            bubble.linkTextAttributes = [NSAttributedString.Key.underlineColor: style.outgoingLinkColor]
-            bubble.linkTextAttributes = [NSAttributedString.Key.foregroundColor: style.outgoingLinkColor]
+            bubble.linkTextAttributes = [
+                NSAttributedString.Key.underlineColor: message.user.isSender ? style.outgoingLinkColor : style.incomingLinkColor,
+                NSAttributedString.Key.foregroundColor: message.user.isSender ? style.outgoingLinkColor : style.incomingLinkColor,
+                NSAttributedString.Key.underlineStyle: message.user.isSender ? style.outgoingLinkUnderlineStyle : style.incomingLinkUnderlineStyle
+            ]
             bubble.font = style.font
             bubble.backgroundImageView.tintColor = message.user.isSender ? style.outgoingBubbleColor : style.incomingBubbleColor
             bubble.textColor = message.user.isSender ? style.outgoingTextColor : style.incomingTextColor
