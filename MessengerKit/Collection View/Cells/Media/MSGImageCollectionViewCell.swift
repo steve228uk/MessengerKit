@@ -20,6 +20,7 @@ class MSGImageCollectionViewCell: MSGMessageCell {
                 return
             }
             
+            imageView.image = nil
             if case let MSGMessageBody.image(image) = message.body {
                 imageView.image = image
             } else if case let MSGMessageBody.imageFromUrl(imageUrl) = message.body {
