@@ -34,6 +34,7 @@ class MSGImageCollectionViewCell: MSGMessageCell {
     }
     
     private func downloadImage(from url: URL) {
+        imageView.image = nil
         print("Download Started")
         getData(from: url) { data, response, error in
             guard let data = data, error == nil else { return }
@@ -47,7 +48,7 @@ class MSGImageCollectionViewCell: MSGMessageCell {
     
     override func awakeFromNib() {
         super.awakeFromNib()
-        
+        imageView.image = nil
         imageView.layer.cornerRadius = 18
         imageView.layer.masksToBounds = true
         imageView.isUserInteractionEnabled = true   
