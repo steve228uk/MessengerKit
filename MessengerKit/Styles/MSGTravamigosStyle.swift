@@ -6,6 +6,8 @@
 //  Copyright © 2018 Cocoon Development Ltd. All rights reserved.
 //
 
+import UIKit
+
 /// Styles the messenger view to be similar to that used in Travamigos.
 public struct MSGTravamigosStyle: MSGMessengerStyle {
     
