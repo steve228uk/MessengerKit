@@ -8,6 +8,7 @@
 
 import UIKit
 
+@objc(MSGTravCollectionViewSectionFooter)
 class MSGTravCollectionViewSectionFooter: MSGSectionReusableView {
     
     @IBOutlet weak var avatarImageView: UIImageView!

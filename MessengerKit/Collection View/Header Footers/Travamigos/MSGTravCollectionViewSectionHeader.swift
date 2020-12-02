@@ -8,6 +8,7 @@
 
 import UIKit
 
+@objc(MSGTravCollectionViewSectionHeader)
 class MSGTravCollectionViewSectionHeader: MSGSectionReusableView {
     
     @IBOutlet weak var label: UILabel!

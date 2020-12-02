@@ -8,6 +8,7 @@
 
 import UIKit
 
+@objc(MSGImessageHeaderView)
 class MSGImessageHeaderView: MSGSectionReusableView {
     
     @IBOutlet weak var label: UILabel!

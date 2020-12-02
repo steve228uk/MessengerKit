@@ -10,6 +10,7 @@ import UIKit
 
 /// Internal class used to load the collection view and input view for `MSGMessengerView`.
 /// This view simply contains two containers and is loaded from the `MSGMessengerView` nib.
+@objc(MSGMessengerView)
 class MSGMessengerView: UIView {
     
     @IBOutlet weak var backgroundView: UIView!

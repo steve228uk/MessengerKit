@@ -8,6 +8,7 @@
 
 import UIKit
 
+@objc(MSGTravCollectionViewCell)
 open class MSGTravCollectionViewCell: MSGMessageCell {
     
     @IBOutlet weak var bubbleWidthConstraint: NSLayoutConstraint!

@@ -6,6 +6,8 @@
 //  Copyright © 2018 Cocoon Development Ltd. All rights reserved.
 //
 
+import UIKit
+
 /// Styles the `MSGMessengerViewController` to be similar in style to iMessage.
 public struct MSGIMessageStyle: MSGMessengerStyle {
     

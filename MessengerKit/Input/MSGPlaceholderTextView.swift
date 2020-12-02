@@ -11,6 +11,7 @@ import UIKit
 /// A text view that supports a placeholder.
 ///
 /// (I really should open a radar to request a native control).
+@objc(MSGPlaceholderTextView)
 open class MSGPlaceholderTextView: UIView {
     
     /// The actual text view being used

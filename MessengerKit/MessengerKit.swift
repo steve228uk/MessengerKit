@@ -11,6 +11,9 @@ import Foundation
 public final class MessengerKit {
     
     /// The bundle that contains nibs and assets.
+    #if SWIFT_PACKAGE
+    internal static var bundle: Bundle? = .module
+    #else
     internal static var bundle: Bundle? {
         let sourceBundle = Bundle(for: MessengerKit.self)
         
@@ -20,6 +23,7 @@ public final class MessengerKit {
         
         return sourceBundle
     }
+    #endif
     
     private init() { }
     

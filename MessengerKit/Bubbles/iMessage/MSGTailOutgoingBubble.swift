@@ -9,6 +9,7 @@
 import UIKit
 
 /// A bubble for outgoing messages for use in the iMessage style.
+@objc(MSGTailOutgoingBubble)
 public class MSGTailOutgoingBubble: UITextView {
     
     lazy var tailImage: UIImage = {
