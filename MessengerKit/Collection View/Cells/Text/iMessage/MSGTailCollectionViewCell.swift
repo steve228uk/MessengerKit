@@ -8,6 +8,7 @@
 
 import UIKit
 
+@objc(MSGTailCollectionViewCell)
 open class MSGTailCollectionViewCell: MSGMessageCell {
     
     @IBOutlet public weak var bubble: MSGTailOutgoingBubble!

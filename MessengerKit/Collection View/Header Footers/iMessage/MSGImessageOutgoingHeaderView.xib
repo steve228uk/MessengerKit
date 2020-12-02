@@ -12,7 +12,7 @@
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
         <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
-        <collectionReusableView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="outgoingHeader" id="U6b-Vx-4bR" customClass="MSGImessageHeaderView" customModule="MessengerKit" customModuleProvider="target">
+        <collectionReusableView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="outgoingHeader" id="U6b-Vx-4bR" customClass="MSGImessageHeaderView">
             <rect key="frame" x="0.0" y="0.0" width="425" height="49"/>
             <autoresizingMask key="autoresizingMask"/>
             <subviews>

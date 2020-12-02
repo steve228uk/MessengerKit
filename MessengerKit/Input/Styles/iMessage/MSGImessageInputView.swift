@@ -8,6 +8,7 @@
 
 import UIKit
 
+@objc(MSGImessageInputView)
 open class MSGImessageInputView: MSGInputView {
     
     override open class var nib: UINib? {

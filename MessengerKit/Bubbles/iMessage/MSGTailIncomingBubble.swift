@@ -8,6 +8,7 @@
 
 import UIKit
 
+@objc(MSGTailIncomingBubble)
 public class MSGTailIncomingBubble: MSGTailOutgoingBubble {
     
     

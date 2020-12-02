@@ -8,6 +8,7 @@
 
 import UIKit
 
+@objc(MSGEmojiCollectionViewCell)
 class MSGEmojiCollectionViewCell: MSGMessageCell {
     
     @IBOutlet weak var textLabel: UILabel!

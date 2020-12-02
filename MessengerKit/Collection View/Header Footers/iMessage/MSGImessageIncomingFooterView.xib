@@ -12,7 +12,7 @@
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
         <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
-        <collectionReusableView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="incomingFooter" id="s0D-P6-Fmu" customClass="MSGImessageFooterView" customModule="MessengerKit" customModuleProvider="target">
+        <collectionReusableView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="incomingFooter" id="s0D-P6-Fmu" customClass="MSGImessageFooterView">
             <rect key="frame" x="0.0" y="0.0" width="425" height="49"/>
             <autoresizingMask key="autoresizingMask"/>
             <subviews>

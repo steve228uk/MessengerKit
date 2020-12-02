@@ -8,6 +8,7 @@
 
 import UIKit
 
+@objc(MSGImessageSendButton)
 class MSGImessageSendButton: UIButton {
 
     let overlay = CALayer()

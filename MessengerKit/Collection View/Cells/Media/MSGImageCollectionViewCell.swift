@@ -8,6 +8,7 @@
 
 import UIKit
 
+@objc(MSGImageCollectionViewCell)
 class MSGImageCollectionViewCell: MSGMessageCell {
     
     @IBOutlet weak var imageView: UIImageView!

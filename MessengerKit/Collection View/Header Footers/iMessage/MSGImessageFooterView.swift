@@ -8,6 +8,7 @@
 
 import UIKit
 
+@objc(MSGImessageFooterView)
 class MSGImessageFooterView: MSGSectionReusableView {
     
     @IBOutlet weak var label: UILabel!

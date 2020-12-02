@@ -9,6 +9,7 @@
 import UIKit
 
 /// A bubble for outgoing messages for use in the Travamigos style.
+@objc(MSGTravOutgoingBubble)
 class MSGTravOutgoingBubble: UITextView {
     
     var gradientLayer = CAGradientLayer()

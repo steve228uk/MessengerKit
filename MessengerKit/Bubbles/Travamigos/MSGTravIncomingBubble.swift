@@ -8,6 +8,7 @@
 
 import UIKit
 
+@objc(MSGTravIncomingBubble)
 class MSGTravIncomingBubble: MSGTravOutgoingBubble {
     
     override var gradientColors: [CGColor] {
