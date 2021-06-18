@@ -12,7 +12,7 @@ open class MSGImessageInputView: MSGInputView {
     
     override open class var nib: UINib? {
         return UINib(nibName: "MSGImessageInputView",
-                     bundle: MessengerKit.bundle)
+                     bundle: MSGMessengerKit.bundle)
     }
     
     open override var tintColor: UIColor! {

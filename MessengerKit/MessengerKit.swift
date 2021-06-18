@@ -1,5 +1,5 @@
 //
-//  MessengerKit.swift
+//  MSGMessengerKit.swift
 //  MessengerKit
 //
 //  Created by Stephen Radford on 08/06/2018.
@@ -8,11 +8,11 @@
 
 import Foundation
 
-public final class MessengerKit {
+public final class MSGMessengerKit {
     
     /// The bundle that contains nibs and assets.
     internal static var bundle: Bundle? {
-        let sourceBundle = Bundle(for: MessengerKit.self)
+        let sourceBundle = Bundle(for: MSGMessengerKit.self)
         
         if let url = sourceBundle.url(forResource: "MessengerKit", withExtension: "bundle"), let bundle = Bundle(url: url) {
             return bundle

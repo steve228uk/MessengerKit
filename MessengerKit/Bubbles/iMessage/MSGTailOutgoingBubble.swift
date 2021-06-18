@@ -15,7 +15,7 @@ public class MSGTailOutgoingBubble: UITextView {
     
         let image = UIImage(
             named: "Outgoing Tail Bubble",
-            in: MessengerKit.bundle,
+            in: MSGMessengerKit.bundle,
             compatibleWith: nil
         )
         
@@ -32,7 +32,7 @@ public class MSGTailOutgoingBubble: UITextView {
        
         let image = UIImage(
             named: "Outgoing Bubble",
-            in: MessengerKit.bundle,
+            in: MSGMessengerKit.bundle,
             compatibleWith: nil
         )
         

@@ -18,7 +18,7 @@ class ViewController: MSGMessengerViewController {
     var id = 100
     
     override var style: MSGMessengerStyle {
-        var style = MessengerKit.Styles.iMessage
+        var style = MSGMessengerKit.Styles.iMessage
         style.headerHeight = 0
 //        style.inputPlaceholder = "Message"
 //        style.alwaysDisplayTails = true

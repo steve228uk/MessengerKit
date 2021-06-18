@@ -69,7 +69,7 @@ open class MSGMessengerViewController: UIViewController {
     
     /// The style of the messenger
     open var style: MSGMessengerStyle {
-        return MessengerKit.Styles.iMessage
+        return MSGMessengerKit.Styles.iMessage
     }
     
     /// How the keyboard should be dismissed by the Messenger View Controller
@@ -135,7 +135,7 @@ open class MSGMessengerViewController: UIViewController {
     }
     
     private func loadFromDefaultNib() {
-        let view = UINib(nibName: "MSGMessengerView", bundle: MessengerKit.bundle)
+        let view = UINib(nibName: "MSGMessengerView", bundle: MSGMessengerKit.bundle)
             .instantiate(withOwner: self, options: nil).first as? MSGMessengerView
         
         view?.frame = CGRect.zero
