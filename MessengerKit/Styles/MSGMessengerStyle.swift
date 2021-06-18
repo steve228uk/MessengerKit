@@ -48,17 +48,26 @@ public protocol MSGMessengerStyle {
     /// The color of text used by the placeholder in input view
     var inputPlaceholderTextColor: UIColor { get }
     
+    // The color of the textview in the input view
+    var inputTextViewBackgroundColor : UIColor { get }
+    
     /// The text color of outgoing messages
     var outgoingTextColor: UIColor { get }
     
     /// Color of links in the outgoing messages
     var outgoingLinkColor: UIColor { get }
     
+    /// Underline style of links on the outgoing messages
+    var outgoingLinkUnderlineStyle: NSNumber { get }
+
     /// The text color of incoming messages
     var incomingTextColor: UIColor { get }
     
     /// Color of links on the incoming messages
     var incomingLinkColor: UIColor { get }
+
+    /// Underline style of links on the incoming messages
+    var incomingLinkUnderlineStyle: NSNumber { get }
 
     /// Calculates the size of the cell for a given message
     ///

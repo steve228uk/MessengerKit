@@ -21,6 +21,8 @@ public struct MSGIMessageStyle: MSGMessengerStyle {
     
     public var inputViewBackgroundColor: UIColor = .white
     
+    public var inputTextViewBackgroundColor : UIColor = .white
+    
     public var font: UIFont = .preferredFont(forTextStyle: .body)
     
     public var inputFont: UIFont = .systemFont(ofSize: 14)
@@ -38,6 +40,10 @@ public struct MSGIMessageStyle: MSGMessengerStyle {
     public var outgoingLinkColor: UIColor = .white
     
     public var incomingLinkColor: UIColor = UIColor(hue:0.58, saturation:0.81, brightness:0.95, alpha:1.00)
+
+    public var outgoingLinkUnderlineStyle: NSNumber = 0
+
+    public var incomingLinkUnderlineStyle: NSNumber = 0
     
     public func size(for message: MSGMessage, in collectionView: UICollectionView) -> CGSize {
         

@@ -40,6 +40,7 @@ open class MSGInputView: UIControl {
             textView.placeholder = style.inputPlaceholder
             textView.textColor = style.inputTextColor
             textView.placeholderColor = style.inputPlaceholderTextColor
+            textView.backgroundColor = style.inputTextViewBackgroundColor
             backgroundColor = style.inputViewBackgroundColor
         }
     }
